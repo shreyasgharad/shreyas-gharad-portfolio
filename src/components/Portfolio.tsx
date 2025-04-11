@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, Github, Linkedin, Instagram } from 'lucide-react';
 
 const Portfolio = () => {
   const categories = [
@@ -29,7 +29,7 @@ const Portfolio = () => {
       title: 'York Winery',
       category: 'beverages',
       description: 'Digital marketing and social media management for premium winery.',
-      image: '/lovable-uploads/5a6b9b68-c7c9-4d5c-b9b4-166fca97d66e.png',
+      image: '/lovable-uploads/bbb987ff-6f2b-4412-abe1-b9e8f55afb55.png',
       logo: true,
     },
     {
@@ -93,7 +93,7 @@ const Portfolio = () => {
       title: 'Space',
       category: 'fmcg',
       description: 'E-commerce strategy and brand identity for beverage retailer.',
-      image: '/lovable-uploads/1624901e-41d1-4880-afbe-8bf9358833ef.png',
+      image: '/lovable-uploads/a4867d42-bf0c-4e6c-9cdb-a029ea4f737a.png',
       logo: true,
     },
     {
@@ -101,7 +101,7 @@ const Portfolio = () => {
       title: 'Provogue',
       category: 'fmcg',
       description: 'Digital marketing strategy and brand revitalization for fashion retail.',
-      image: '/lovable-uploads/acf32d36-06a9-4739-abd1-afe0978d9e08.png',
+      image: '/lovable-uploads/41ff9ee3-a964-4e2e-91a5-fa8d88003edb.png',
       logo: true,
     },
     {
@@ -117,7 +117,7 @@ const Portfolio = () => {
       title: 'Estate Monkey',
       category: 'real-estate',
       description: 'Branding and digital marketing for innovative real estate platform.',
-      image: '/lovable-uploads/998971f7-2808-417e-953c-afb0043a8a35.png',
+      image: '/lovable-uploads/e95da7f0-8352-4a13-b545-81aa1cd2cf6f.png',
       logo: true,
     },
   ];
@@ -126,6 +126,34 @@ const Portfolio = () => {
     ? projects 
     : projects.filter(project => project.category === activeCategory);
 
+  const socialLinks = [
+    { 
+      name: 'GitHub',
+      url: 'https://github.com/shreyasgharad',
+      icon: <Github size={20} />
+    },
+    { 
+      name: 'LinkedIn',
+      url: 'https://www.linkedin.com/in/hiishreyas',
+      icon: <Linkedin size={20} />
+    },
+    { 
+      name: 'Instagram',
+      url: 'https://www.instagram.com/shreyas_gharad/',
+      icon: <Instagram size={20} />
+    },
+    { 
+      name: 'Peerlist',
+      url: 'https://peerlist.io/shreyasgharad',
+      icon: <ExternalLink size={20} />
+    },
+    { 
+      name: 'Echai Ventures',
+      url: 'https://echai.ventures/@shreyas-gharad',
+      icon: <ExternalLink size={20} />
+    }
+  ];
+
   return (
     <section id="portfolio" className="bg-gray-50">
       <div className="container">
@@ -133,6 +161,21 @@ const Portfolio = () => {
         <p className="section-subtitle font-sf-pro-text">
           Featured projects and brands I've had the pleasure to work with at Tipple Works Co.
         </p>
+        
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          {socialLinks.map((link, index) => (
+            <a 
+              key={index}
+              href={link.url} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm hover:shadow-md transition-all text-sm font-medium text-gray-700 hover:text-blue font-sf-pro-text"
+            >
+              <span className="text-blue">{link.icon}</span>
+              {link.name}
+            </a>
+          ))}
+        </div>
         
         <div className="flex justify-center mb-12">
           <div className="flex flex-wrap justify-center gap-2">
@@ -159,11 +202,11 @@ const Portfolio = () => {
               className="group rounded-xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-shadow duration-300 animate-fade-in"
               style={{ animationDelay: `${project.id * 0.1}s` }}
             >
-              <div className="relative overflow-hidden h-64 bg-gray-50 flex items-center justify-center p-6">
+              <div className="relative overflow-hidden h-64 bg-[#f7f7f7] flex items-center justify-center p-8">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className={project.logo ? "h-24 w-auto object-contain" : "w-full h-full object-cover"}
+                  className={project.logo ? "max-h-28 max-w-[80%] w-auto object-contain" : "w-full h-full object-cover"}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6">
