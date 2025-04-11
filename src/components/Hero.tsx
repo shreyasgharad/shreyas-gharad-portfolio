@@ -31,7 +31,7 @@ const Hero = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-blue-light/20 absolute -top-5 -left-5"></div>
               <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue to-blue-dark rounded-2xl overflow-hidden shadow-xl relative z-10">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1587" 
+                  src="/lovable-uploads/64a37dba-5fff-4970-8de2-b118bb84406a.png" 
                   alt="Shreyas Gharad" 
                   className="w-full h-full object-cover"
                 />
@@ -43,11 +43,7 @@ const Hero = () => {
         <div className="mt-24 py-8 border-t border-gray-200">
           <p className="text-center text-gray-500 mb-8">Trusted by brands:</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-            <img src="https://placehold.co/120x60?text=Sula+Vineyards" alt="Sula Vineyards" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
-            <img src="https://placehold.co/120x60?text=Paul+and+Mike" alt="Paul and Mike" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
-            <img src="https://placehold.co/120x60?text=Sprig" alt="Sprig" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
-            <img src="https://placehold.co/120x60?text=Zomato" alt="Zomato" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
-            <img src="https://placehold.co/120x60?text=Space+Coffee" alt="Space Coffee" className="h-8 opacity-70 hover:opacity-100 transition-opacity" />
+            <img src="/lovable-uploads/e198213d-1744-42b4-b210-01e06cac3856.png" alt="Brand Logos" className="max-w-full h-auto" />
           </div>
         </div>
       </div>

@@ -5,9 +5,11 @@ import { ExternalLink } from 'lucide-react';
 const Portfolio = () => {
   const categories = [
     { id: 'all', name: 'All' },
-    { id: 'd2c', name: 'D2C Brands' },
-    { id: 'sula', name: 'Sula Extensions' },
-    { id: 'food', name: 'Food & Beverage' },
+    { id: 'beverages', name: 'Beverages' },
+    { id: 'restaurants', name: 'Restaurants' },
+    { id: 'hotels', name: 'Hotels' },
+    { id: 'fmcg', name: 'FMCG' },
+    { id: 'educational', name: 'Educational' },
   ];
 
   const [activeCategory, setActiveCategory] = useState('all');
@@ -16,58 +18,86 @@ const Portfolio = () => {
     {
       id: 1,
       title: 'Sula Vineyards',
-      category: 'd2c',
+      category: 'beverages',
       description: 'Branding and performance marketing strategy for India\'s leading vineyard.',
       image: 'https://placehold.co/600x400?text=Sula+Vineyards',
     },
     {
       id: 2,
-      title: 'Paul and Mike Chocolates',
-      category: 'd2c',
-      description: 'Website development and digital marketing campaign for premium chocolate brand.',
-      image: 'https://placehold.co/600x400?text=Paul+and+Mike',
+      title: 'York Winery',
+      category: 'beverages',
+      description: 'Digital marketing and social media management for premium winery.',
+      image: 'https://placehold.co/600x400?text=York+Winery',
     },
     {
       id: 3,
-      title: 'Sprig Gourmet',
-      category: 'd2c',
-      description: 'E-commerce strategy and social media management for gourmet food brand.',
-      image: 'https://placehold.co/600x400?text=Sprig+Gourmet',
+      title: 'Space',
+      category: 'beverages',
+      description: 'Brand identity and website design for beverage retailer.',
+      image: 'https://placehold.co/600x400?text=Space',
     },
     {
       id: 4,
-      title: 'Space Coffee',
-      category: 'd2c',
-      description: 'Brand identity and website design for specialty coffee retailer.',
-      image: 'https://placehold.co/600x400?text=Space+Coffee',
-    },
-    {
-      id: 5,
-      title: 'Beyond by Sula',
-      category: 'sula',
-      description: 'Launch campaign and digital strategy for Sula\'s premium wine collection.',
-      image: 'https://placehold.co/600x400?text=Beyond+by+Sula',
-    },
-    {
-      id: 6,
-      title: 'Source by Sula',
-      category: 'sula',
-      description: 'Content strategy and social media management for Sula\'s sustainable initiative.',
-      image: 'https://placehold.co/600x400?text=Source+by+Sula',
-    },
-    {
-      id: 7,
       title: 'Momoland',
-      category: 'food',
+      category: 'restaurants',
       description: 'Restaurant chain marketing strategy and website development.',
       image: 'https://placehold.co/600x400?text=Momoland',
     },
     {
+      id: 5,
+      title: 'Buns & Slices',
+      category: 'restaurants',
+      description: 'Social media strategy and content creation for fast-casual restaurant chain.',
+      image: 'https://placehold.co/600x400?text=Buns+and+Slices',
+    },
+    {
+      id: 6,
+      title: 'Copper Grillhouse',
+      category: 'restaurants',
+      description: 'Brand positioning and digital presence for upscale dining establishment.',
+      image: 'https://placehold.co/600x400?text=Copper+Grillhouse',
+    },
+    {
+      id: 7,
+      title: 'Beyond by Sula',
+      category: 'hotels',
+      description: 'Launch campaign and digital strategy for Sula\'s premium hospitality collection.',
+      image: 'https://placehold.co/600x400?text=Beyond+by+Sula',
+    },
+    {
       id: 8,
-      title: 'Zomato Partnership',
-      category: 'food',
-      description: 'Platform collaboration strategy for food delivery integration.',
-      image: 'https://placehold.co/600x400?text=Zomato',
+      title: 'The Source',
+      category: 'hotels',
+      description: 'Marketing and online booking strategy for boutique hotel property.',
+      image: 'https://placehold.co/600x400?text=The+Source',
+    },
+    {
+      id: 9,
+      title: 'Paul and Mike',
+      category: 'fmcg',
+      description: 'Website development and digital marketing campaign for premium chocolate brand.',
+      image: 'https://placehold.co/600x400?text=Paul+and+Mike',
+    },
+    {
+      id: 10,
+      title: 'Sprig',
+      category: 'fmcg',
+      description: 'E-commerce strategy and social media management for gourmet food brand.',
+      image: 'https://placehold.co/600x400?text=Sprig',
+    },
+    {
+      id: 11,
+      title: 'Provogue',
+      category: 'fmcg',
+      description: 'Digital marketing strategy and brand revitalization for fashion retail.',
+      image: 'https://placehold.co/600x400?text=Provogue',
+    },
+    {
+      id: 12,
+      title: 'Kiddopia',
+      category: 'educational',
+      description: 'Marketing strategy and user acquisition for children\'s educational platform.',
+      image: 'https://placehold.co/600x400?text=Kiddopia',
     },
   ];
 
@@ -80,8 +110,16 @@ const Portfolio = () => {
       <div className="container">
         <h2 className="section-title">My Portfolio</h2>
         <p className="section-subtitle">
-          Featured projects and brands I've had the pleasure to work with.
+          Featured projects and brands I've had the pleasure to work with at Tipple Works Co.
         </p>
+        
+        <div className="text-center mb-10">
+          <img 
+            src="/lovable-uploads/e198213d-1744-42b4-b210-01e06cac3856.png" 
+            alt="Brand Collaborations" 
+            className="max-w-full h-auto inline-block"
+          />
+        </div>
         
         <div className="flex justify-center mb-12">
           <div className="flex flex-wrap justify-center gap-2">
