@@ -33,14 +33,24 @@ const Experience = () => {
       icon: GraduationCap,
       iconBg: "bg-green-light/20",
       iconColor: "text-green"
+    },
+    {
+      id: 4,
+      role: "B.E. in Electronics Engineering",
+      company: "Yashwantrao Chavan Engineering College",
+      period: "2024",
+      description: "Completed bachelor's degree in Electronics Engineering, building a strong foundation in technical knowledge and problem-solving skills.",
+      icon: GraduationCap,
+      iconBg: "bg-blue-light/20",
+      iconColor: "text-blue"
     }
   ];
 
   return (
     <section id="experience" className="bg-gray-50">
       <div className="container">
-        <h2 className="section-title">My Experience</h2>
-        <p className="section-subtitle">
+        <h2 className="section-title font-sf-pro">My Experience</h2>
+        <p className="section-subtitle font-sf-pro-text">
           My professional journey working with creative agencies and prestigious brands.
         </p>
         
@@ -64,14 +74,14 @@ const Experience = () => {
                         <exp.icon size={24} className={exp.iconColor} />
                       </div>
                       <div>
-                        <h3 className="text-xl font-bold">{exp.role}</h3>
-                        <p className="text-gray-500">{exp.company}</p>
+                        <h3 className="text-xl font-bold font-sf-pro">{exp.role}</h3>
+                        <p className="text-gray-500 font-sf-pro-text">{exp.company}</p>
                       </div>
                     </div>
-                    <div className="mb-4 inline-block px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600">
+                    <div className="mb-4 inline-block px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600 font-sf-pro-text">
                       {exp.period}
                     </div>
-                    <p className="text-gray-600">{exp.description}</p>
+                    <p className="text-gray-600 font-sf-pro-text">{exp.description}</p>
                   </div>
                 </div>
               </div>
