@@ -10,6 +10,7 @@ const Portfolio = () => {
     { id: 'hotels', name: 'Hotels' },
     { id: 'fmcg', name: 'FMCG' },
     { id: 'educational', name: 'Educational' },
+    { id: 'real-estate', name: 'Real Estate' },
   ];
 
   const [activeCategory, setActiveCategory] = useState('all');
@@ -28,8 +29,8 @@ const Portfolio = () => {
       title: 'York Winery',
       category: 'beverages',
       description: 'Digital marketing and social media management for premium winery.',
-      image: 'https://placehold.co/600x400?text=York+Winery',
-      logo: false,
+      image: '/lovable-uploads/5a6b9b68-c7c9-4d5c-b9b4-166fca97d66e.png',
+      logo: true,
     },
     {
       id: 3,
@@ -92,16 +93,16 @@ const Portfolio = () => {
       title: 'Space',
       category: 'fmcg',
       description: 'E-commerce strategy and brand identity for beverage retailer.',
-      image: 'https://placehold.co/600x400?text=Space',
-      logo: false,
+      image: '/lovable-uploads/1624901e-41d1-4880-afbe-8bf9358833ef.png',
+      logo: true,
     },
     {
       id: 11,
       title: 'Provogue',
       category: 'fmcg',
       description: 'Digital marketing strategy and brand revitalization for fashion retail.',
-      image: 'https://placehold.co/600x400?text=Provogue',
-      logo: false,
+      image: '/lovable-uploads/acf32d36-06a9-4739-abd1-afe0978d9e08.png',
+      logo: true,
     },
     {
       id: 12,
@@ -111,6 +112,14 @@ const Portfolio = () => {
       image: '/lovable-uploads/3b20498c-5b22-4995-bdc2-a5073c83ddb3.png',
       logo: true,
     },
+    {
+      id: 13,
+      title: 'Estate Monkey',
+      category: 'real-estate',
+      description: 'Branding and digital marketing for innovative real estate platform.',
+      image: '/lovable-uploads/998971f7-2808-417e-953c-afb0043a8a35.png',
+      logo: true,
+    },
   ];
 
   const filteredProjects = activeCategory === 'all' 
@@ -118,7 +127,7 @@ const Portfolio = () => {
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <section id="portfolio" className="bg-white">
+    <section id="portfolio" className="bg-gray-50">
       <div className="container">
         <h2 className="section-title font-sf-pro">My Portfolio</h2>
         <p className="section-subtitle font-sf-pro-text">
@@ -134,7 +143,7 @@ const Portfolio = () => {
                 className={`px-5 py-2 rounded-full text-sm font-medium transition-colors font-sf-pro-text ${
                   activeCategory === category.id 
                     ? 'bg-blue text-white' 
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    : 'bg-white text-gray-700 hover:bg-gray-100 shadow-sm'
                 }`}
               >
                 {category.name}
@@ -147,14 +156,14 @@ const Portfolio = () => {
           {filteredProjects.map((project) => (
             <div 
               key={project.id} 
-              className="group rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 animate-fade-in"
+              className="group rounded-xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-shadow duration-300 animate-fade-in"
               style={{ animationDelay: `${project.id * 0.1}s` }}
             >
-              <div className="relative overflow-hidden h-64 bg-gray-100 flex items-center justify-center">
+              <div className="relative overflow-hidden h-64 bg-gray-50 flex items-center justify-center p-6">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className={project.logo ? "w-3/4 h-auto object-contain" : "w-full h-full object-cover"}
+                  className={project.logo ? "h-24 w-auto object-contain" : "w-full h-full object-cover"}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6">

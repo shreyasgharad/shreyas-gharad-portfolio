@@ -6,25 +6,33 @@ const Blog = () => {
   const blogPosts = [
     {
       id: 1,
-      title: 'How D2C Brands Can Leverage Social Media in 2023',
+      title: 'US-India Tariff Reduction: Impact on Digital Advertising',
+      excerpt: 'A detailed analysis of the recent 6% tax reduction agreement between the US and India and how it affects the digital marketing landscape.',
+      date: 'April 5, 2025',
+      category: 'Strategy',
+      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop',
+    },
+    {
+      id: 2,
+      title: 'How D2C Brands Can Leverage Social Media in 2025',
       excerpt: 'Practical strategies for direct-to-consumer brands to maximize their social media presence and drive conversions.',
-      date: 'April 15, 2023',
+      date: 'March 15, 2025',
       category: 'Marketing',
       image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
     },
     {
-      id: 2,
+      id: 3,
       title: 'Integrating ERP Systems for Small to Medium Businesses',
       excerpt: 'A step-by-step guide on how smaller businesses can benefit from enterprise resource planning without breaking the bank.',
-      date: 'March 22, 2023',
+      date: 'February 22, 2025',
       category: 'Technology',
       image: 'https://images.unsplash.com/photo-1579389083078-4e7018379f7e?q=80&w=2070&auto=format&fit=crop',
     },
     {
-      id: 3,
+      id: 4,
       title: 'The Future of Indian D2C Brands in Global Markets',
       excerpt: 'Exploring opportunities and challenges for Indian direct-to-consumer brands looking to expand internationally.',
-      date: 'February 10, 2023',
+      date: 'January 10, 2025',
       category: 'Strategy',
       image: 'https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1964&auto=format&fit=crop',
     },
@@ -38,7 +46,7 @@ const Blog = () => {
           Insights and perspectives on marketing, systems, and strategy.
         </p>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {blogPosts.map((post) => (
             <div 
               key={post.id} 
