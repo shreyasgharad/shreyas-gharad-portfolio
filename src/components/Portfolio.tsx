@@ -10,7 +10,7 @@ const Portfolio = () => {
     { id: 'hotels', name: 'Hotels' },
     { id: 'fmcg', name: 'FMCG' },
     { id: 'educational', name: 'Educational' },
-    { id: 'real-estate', name: 'Real Estate' },
+    { id: 'coffee', name: 'Coffee' },
   ];
 
   const [activeCategory, setActiveCategory] = useState('all');
@@ -21,7 +21,8 @@ const Portfolio = () => {
       title: 'Sula Vineyards',
       category: 'beverages',
       description: 'Branding and performance marketing strategy for India\'s leading vineyard.',
-      image: '/lovable-uploads/476dbb37-d879-4909-8f7d-c4fa9d6ecec1.png',
+      image: '/lovable-uploads/fe270892-e18c-40c2-b152-d032913205f9.png',
+      url: 'https://sulawines.com',
       logo: true,
     },
     {
@@ -29,7 +30,8 @@ const Portfolio = () => {
       title: 'York Winery',
       category: 'beverages',
       description: 'Digital marketing and social media management for premium winery.',
-      image: '/lovable-uploads/bbb987ff-6f2b-4412-abe1-b9e8f55afb55.png',
+      image: '/lovable-uploads/aa3bd555-477c-4d43-9723-519e496e8859.png',
+      url: 'https://yorkwinery.com',
       logo: true,
     },
     {
@@ -37,7 +39,8 @@ const Portfolio = () => {
       title: 'Sprig',
       category: 'beverages',
       description: 'Brand identity and website design for gourmet food brand.',
-      image: '/lovable-uploads/097e6649-9572-4f09-9af3-a27ced925364.png',
+      image: '/lovable-uploads/cbbc2c43-c4db-440a-bb80-c4b090690081.png',
+      url: 'https://spriggourmet.com',
       logo: true,
     },
     {
@@ -46,6 +49,7 @@ const Portfolio = () => {
       category: 'restaurants',
       description: 'Marketing campaign strategy and analytics implementation.',
       image: '/lovable-uploads/be437b36-52d5-4f8a-bbb2-003080267730.png',
+      url: 'https://zomato.com',
       logo: true,
     },
     {
@@ -53,23 +57,26 @@ const Portfolio = () => {
       title: 'Momoland',
       category: 'restaurants',
       description: 'Restaurant chain marketing strategy and website development.',
-      image: 'https://placehold.co/600x400?text=Momoland',
-      logo: false,
+      image: '/lovable-uploads/c91b61a1-bf0f-43da-bbe9-4a1d608ecac1.png',
+      url: 'https://momoland.com',
+      logo: true,
     },
     {
       id: 6,
       title: 'Copper Grillhouse',
       category: 'restaurants',
       description: 'Brand positioning and digital presence for upscale dining establishment.',
-      image: 'https://placehold.co/600x400?text=Copper+Grillhouse',
-      logo: false,
+      image: '/lovable-uploads/ca478634-399e-440f-a80c-1ade1b6c0877.png',
+      url: 'https://coppergrillhouse.com',
+      logo: true,
     },
     {
       id: 7,
       title: 'Beyond by Sula',
       category: 'hotels',
       description: 'Launch campaign and digital strategy for Sula\'s premium hospitality collection.',
-      image: '/lovable-uploads/f2534e6a-ef6d-4468-a5bd-795c089fabef.png',
+      image: '/lovable-uploads/30223106-d65d-47e7-bea5-5ac763a6f4b6.png',
+      url: 'https://sulawines.com/beyond',
       logo: true,
     },
     {
@@ -77,7 +84,8 @@ const Portfolio = () => {
       title: 'The Source',
       category: 'hotels',
       description: 'Marketing and online booking strategy for boutique hotel property.',
-      image: '/lovable-uploads/08d15b4e-6e34-416d-b3d6-e633b6545ed7.png',
+      image: '/lovable-uploads/6d5cd239-feca-4c90-9736-5c3610c27335.png',
+      url: 'https://thesource.co.in',
       logo: true,
     },
     {
@@ -85,7 +93,8 @@ const Portfolio = () => {
       title: 'Paul and Mike',
       category: 'fmcg',
       description: 'Website development and digital marketing campaign for premium chocolate brand.',
-      image: '/lovable-uploads/dd2d78b8-3f0b-4ea1-b26e-a2bc722c2f43.png',
+      image: '/lovable-uploads/f8448d9c-6c10-4b16-96b8-32c56cdbb71f.png',
+      url: 'https://paulandmike.co',
       logo: true,
     },
     {
@@ -93,7 +102,8 @@ const Portfolio = () => {
       title: 'Space',
       category: 'fmcg',
       description: 'E-commerce strategy and brand identity for beverage retailer.',
-      image: '/lovable-uploads/a4867d42-bf0c-4e6c-9cdb-a029ea4f737a.png',
+      image: '/lovable-uploads/14e3415e-1c8b-470b-9ac8-47983ca958ee.png',
+      url: 'https://spaceindia.com',
       logo: true,
     },
     {
@@ -101,7 +111,8 @@ const Portfolio = () => {
       title: 'Provogue',
       category: 'fmcg',
       description: 'Digital marketing strategy and brand revitalization for fashion retail.',
-      image: '/lovable-uploads/41ff9ee3-a964-4e2e-91a5-fa8d88003edb.png',
+      image: '/lovable-uploads/5e755bf9-e879-4200-8e3c-5cf7602952fa.png',
+      url: 'https://provogue.com',
       logo: true,
     },
     {
@@ -109,15 +120,89 @@ const Portfolio = () => {
       title: 'Kiddopia',
       category: 'educational',
       description: 'Marketing strategy and user acquisition for children\'s educational platform.',
-      image: '/lovable-uploads/3b20498c-5b22-4995-bdc2-a5073c83ddb3.png',
+      image: '/lovable-uploads/f1d0d43f-4f48-4a53-8abd-6a582ef66875.png',
+      url: 'https://kiddopia.com',
       logo: true,
     },
     {
       id: 13,
-      title: 'Estate Monkey',
-      category: 'real-estate',
-      description: 'Branding and digital marketing for innovative real estate platform.',
-      image: '/lovable-uploads/e95da7f0-8352-4a13-b545-81aa1cd2cf6f.png',
+      title: 'Estate Monkeys',
+      category: 'coffee',
+      description: 'Branding and digital marketing for innovative coffee brand.',
+      image: '/lovable-uploads/abf379dd-f7c6-4352-afb0-ecec79a53878.png',
+      url: 'https://estatemonkeys.com',
+      logo: true,
+    },
+    {
+      id: 14,
+      title: 'Matero',
+      category: 'fmcg',
+      description: 'Brand strategy and digital presence for consumer goods company.',
+      image: '/lovable-uploads/27210c65-f5e0-45d4-8113-5dce84c5a013.png',
+      url: 'https://matero.com',
+      logo: true,
+    },
+    {
+      id: 15,
+      title: 'Shakakan',
+      category: 'beverages',
+      description: 'Marketing strategy and brand development for beverage company.',
+      image: '/lovable-uploads/3e936e8c-4151-4886-81de-b7f366d12a43.png',
+      url: 'https://shakakan.com',
+      logo: true,
+    },
+    {
+      id: 16,
+      title: 'Elaan',
+      category: 'fmcg',
+      description: 'Digital presence and marketing campaign for luxury brand.',
+      image: '/lovable-uploads/bddcfd31-393d-4193-9b56-aea03234f59f.png',
+      url: 'https://elaan.com',
+      logo: true,
+    },
+    {
+      id: 17,
+      title: 'Naar',
+      category: 'fmcg',
+      description: 'Brand identity and digital strategy for consumer goods company.',
+      image: '/lovable-uploads/d3a7ff0f-27a9-44bc-8c87-1a6664d57414.png',
+      url: 'https://naar.com',
+      logo: true,
+    },
+    {
+      id: 18,
+      title: 'B&S Burgers',
+      category: 'restaurants',
+      description: 'Social media strategy and website development for burger chain.',
+      image: '/lovable-uploads/a37fbc9c-fdeb-469e-bb1d-8a3550d84678.png',
+      url: 'https://bunsandslices.com',
+      logo: true,
+    },
+    {
+      id: 19,
+      title: 'DSG Partners',
+      category: 'fmcg',
+      description: 'Marketing strategy and digital presence for consumer goods distributor.',
+      image: '/lovable-uploads/1e76d229-143a-4bcb-a93c-f99b8025daf5.png',
+      url: 'https://dsgpartners.com',
+      logo: true,
+    },
+    {
+      id: 20,
+      title: 'Rasa Wines',
+      category: 'beverages',
+      description: 'Brand development and digital marketing for wine company.',
+      image: '/lovable-uploads/2428e18f-1ddb-4368-90d1-78131b60e4f7.png',
+      url: 'https://rasawines.com',
+      logo: true,
+    },
+    {
+      id: 21,
+      title: 'BB Sourced',
+      category: 'fmcg',
+      description: 'E-commerce strategy and brand development for food sourcing company.',
+      image: '/lovable-uploads/543ed4ed-8068-4848-8b32-39682a869ed6.png',
+      url: 'https://bbsourced.com',
       logo: true,
     },
   ];
@@ -210,7 +295,7 @@ const Portfolio = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
                   <div className="p-6">
-                    <a href="#" className="p-2 bg-white rounded-full inline-block mb-4">
+                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="p-2 bg-white rounded-full inline-block mb-4">
                       <ExternalLink size={20} className="text-blue" />
                     </a>
                   </div>

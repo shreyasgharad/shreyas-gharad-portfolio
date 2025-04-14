@@ -22,7 +22,7 @@ const Hero = () => {
                 Get in Touch <ArrowRight size={18} />
               </a>
               <a 
-                href="https://www.tippleworks.com" 
+                href="https://drive.google.com/file/d/1m4Mj_ioqkFMAsL2QIU6qFGsRsO2kwY2f/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="btn-outline flex items-center gap-2 font-sf-pro-text"
@@ -48,26 +48,26 @@ const Hero = () => {
         <div className="mt-24 py-8 border-t border-gray-200">
           <p className="text-center text-gray-500 mb-8 font-sf-pro-text">Trusted by brands:</p>
           <div className="flex flex-wrap justify-center items-center gap-10 px-4">
-            <div className="h-16 w-24 flex items-center justify-center bg-gray-50 rounded-lg p-2">
+            <div className="h-16 w-auto flex items-center justify-center bg-gray-50 rounded-lg p-2">
               <img src="/lovable-uploads/be437b36-52d5-4f8a-bbb2-003080267730.png" alt="Zomato" className="h-10 object-contain" />
             </div>
-            <div className="h-16 w-24 flex items-center justify-center bg-gray-50 rounded-lg p-2">
-              <img src="/lovable-uploads/3b20498c-5b22-4995-bdc2-a5073c83ddb3.png" alt="Kiddopia" className="h-8 object-contain" />
+            <div className="h-16 w-auto flex items-center justify-center bg-gray-50 rounded-lg p-2">
+              <img src="/lovable-uploads/f1d0d43f-4f48-4a53-8abd-6a582ef66875.png" alt="Kiddopia" className="h-10 object-contain" />
             </div>
-            <div className="h-16 w-24 flex items-center justify-center bg-gray-50 rounded-lg p-2">
-              <img src="/lovable-uploads/f2534e6a-ef6d-4468-a5bd-795c089fabef.png" alt="Beyond by Sula" className="h-10 object-contain" />
+            <div className="h-16 w-auto flex items-center justify-center bg-gray-50 rounded-lg p-2">
+              <img src="/lovable-uploads/30223106-d65d-47e7-bea5-5ac763a6f4b6.png" alt="Beyond by Sula" className="h-10 object-contain" />
             </div>
-            <div className="h-16 w-24 flex items-center justify-center bg-gray-50 rounded-lg p-2">
-              <img src="/lovable-uploads/08d15b4e-6e34-416d-b3d6-e633b6545ed7.png" alt="The Source at Sula" className="h-9 object-contain" />
+            <div className="h-16 w-auto flex items-center justify-center bg-gray-50 rounded-lg p-2">
+              <img src="/lovable-uploads/6d5cd239-feca-4c90-9736-5c3610c27335.png" alt="The Source at Sula" className="h-10 object-contain" />
             </div>
-            <div className="h-16 w-24 flex items-center justify-center bg-gray-50 rounded-lg p-2">
-              <img src="/lovable-uploads/097e6649-9572-4f09-9af3-a27ced925364.png" alt="Sprig" className="h-6 object-contain" />
+            <div className="h-16 w-auto flex items-center justify-center bg-gray-50 rounded-lg p-2">
+              <img src="/lovable-uploads/cbbc2c43-c4db-440a-bb80-c4b090690081.png" alt="Sprig" className="h-10 object-contain" />
             </div>
-            <div className="h-16 w-24 flex items-center justify-center bg-gray-50 rounded-lg p-2">
-              <img src="/lovable-uploads/476dbb37-d879-4909-8f7d-c4fa9d6ecec1.png" alt="Sula Vineyards" className="h-8 object-contain" />
+            <div className="h-16 w-auto flex items-center justify-center bg-gray-50 rounded-lg p-2">
+              <img src="/lovable-uploads/fe270892-e18c-40c2-b152-d032913205f9.png" alt="Sula Vineyards" className="h-10 object-contain" />
             </div>
-            <div className="h-16 w-24 flex items-center justify-center bg-gray-50 rounded-lg p-2">
-              <img src="/lovable-uploads/dd2d78b8-3f0b-4ea1-b26e-a2bc722c2f43.png" alt="Paul and Mike" className="h-10 object-contain" />
+            <div className="h-16 w-auto flex items-center justify-center bg-gray-50 rounded-lg p-2">
+              <img src="/lovable-uploads/f8448d9c-6c10-4b16-96b8-32c56cdbb71f.png" alt="Paul and Mike" className="h-10 object-contain" />
             </div>
           </div>
         </div>
