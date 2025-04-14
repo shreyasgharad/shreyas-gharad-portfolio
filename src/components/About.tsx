@@ -21,13 +21,12 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 mt-4">My Journey</h3>
               <p className="text-gray-600 mb-6">
-                At 22, I've already built a career in marketing strategy and web development. Currently working with Tipple Works Co., 
-                a creative powerhouse handling major D2C brands, I contribute to branding, performance marketing, 
-                tech integration, and strategic development.
+                At 22, I've built a career in marketing strategy and web development. Currently at Tipple Works Co., 
+                I contribute to branding, performance marketing, and tech integration for major D2C brands.
               </p>
               <p className="text-gray-600">
-                My background in marketing, design, and technology allows me to bridge the gap between creative vision and technical execution,
-                helping brands create cohesive digital experiences that drive results.
+                My expertise in marketing, design, and technology helps bridge creative vision and technical execution,
+                enabling brands to create cohesive digital experiences that drive measurable results.
               </p>
             </div>
           </div>
@@ -40,7 +39,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Professional Focus</h3>
                 <p className="text-gray-600">
-                  Specializing in branding, performance marketing, and website development for ambitious D2C brands and startups.
+                  Creating data-driven marketing strategies and automated systems for D2C brands and startups.
                 </p>
               </div>
             </div>
@@ -52,7 +51,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Education & Learning</h3>
                 <p className="text-gray-600">
-                  Symbiosis certification graduate with continuous learning in marketing strategies, user experience, and emerging technologies.
+                  BTech in Electronics Engineering with additional certification in Business Communication from Symbiosis.
                 </p>
               </div>
             </div>
@@ -64,7 +63,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Core Mission</h3>
                 <p className="text-gray-600">
-                  Creating an MNC that uplifts Indian businesses globally, bringing innovative strategies and solutions to help brands reach their full potential.
+                  Building an MNC that elevates Indian businesses globally through innovative marketing strategies and technological solutions.
                 </p>
               </div>
             </div>

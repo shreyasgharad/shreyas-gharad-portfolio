@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Calendar, Building, GraduationCap, Server, Code } from 'lucide-react';
+import { Calendar, Building, GraduationCap, Server, Code, Database, Globe } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
@@ -8,8 +8,8 @@ const Experience = () => {
       id: 1,
       role: "Performance Marketing Executive",
       company: "Tipple Works Co.",
-      period: "September 2024 - Present (8 months)",
-      description: "Creating data-driven strategies using tools like Google Ads, Meta Ads, GA4, and GTM. Building automated marketing systems and supporting D2C and B2B brands with end-to-end solutions for E-commerce listings, Q-commerce, branding, and digital marketing.",
+      period: "September 2023 - Present (8 months)",
+      description: "Creating data-driven marketing strategies using Google Ads, Meta Ads, GA4, and GTM. Building automated marketing systems for D2C and B2B brands with e-commerce, Q-commerce, branding, and digital marketing solutions.",
       location: "Mumbai, Maharashtra, India",
       icon: Building,
       iconBg: "bg-blue-light/20",
@@ -20,7 +20,7 @@ const Experience = () => {
       role: "Server & Administration Room Engineer",
       company: "Kalpan Agro-Tech Industries Pvt. Ltd.",
       period: "November 2023 - February 2024 (4 months)",
-      description: "Maintained high-performance servers with 24/7 operational efficiency. Operated advanced Bühler Group Sortex Machinery and supported management, marketing, branding, and advertising efforts.",
+      description: "Maintained high-performance servers and operated Bühler Group Sortex Machinery. Supported management, marketing, and branding initiatives while developing problem-solving and team collaboration skills.",
       location: "Gumthala, Nagpur, Maharashtra",
       icon: Server,
       iconBg: "bg-green-light/20",
@@ -31,9 +31,9 @@ const Experience = () => {
       role: "Performance Marketing Intern",
       company: "Echo Education - Digital Marketing Course",
       period: "March 2024 - August 2024 (6 months)",
-      description: "Transformed businesses digitally by boosting online presence. Designed and optimized websites, applied SEO and SEM techniques, and created high-impact ad campaigns across Meta and Facebook platforms.",
+      description: "Led digital transformation for businesses through website optimization, SEO/SEM implementation, and high-ROI ad campaigns. Utilized various marketing tools including Google Ads, Analytics, and AI-powered platforms for lead generation.",
       location: "Nagpur, Maharashtra, India",
-      icon: Code,
+      icon: Globe,
       iconBg: "bg-orange-light/20",
       iconColor: "text-orange"
     },
@@ -41,7 +41,7 @@ const Experience = () => {
       id: 4,
       role: "Certification in Business Communication",
       company: "Symbiosis International University",
-      period: "June 2024 - August 2024",
+      period: "November 2023 - January 2024",
       description: "Completed specialized certification in professional business communication strategies.",
       icon: GraduationCap,
       iconBg: "bg-blue-light/20",
@@ -51,7 +51,7 @@ const Experience = () => {
       id: 5,
       role: "Bachelor of Technology (BTech)",
       company: "Yashwantrao Chavan College of Engineering",
-      period: "January 2020 - December 2024",
+      period: "January 2020 - December 2023",
       description: "Completed bachelor's degree in Electronics Engineering, building a strong foundation in technical knowledge and problem-solving skills.",
       icon: GraduationCap,
       iconBg: "bg-green-light/20",
