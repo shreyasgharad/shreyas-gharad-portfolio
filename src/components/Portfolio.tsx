@@ -11,17 +11,19 @@ const Portfolio = () => {
     { id: 'fmcg', name: 'FMCG' },
     { id: 'educational', name: 'Educational' },
     { id: 'coffee', name: 'Coffee' },
+    { id: 'agrotech', name: 'AgroTech' },
   ];
 
   const [activeCategory, setActiveCategory] = useState('all');
 
   const projects = [
+    // Make Sula first as the prime client
     {
       id: 1,
       title: 'Sula Vineyards',
       category: 'beverages',
       description: 'Branding and performance marketing strategy for India\'s leading vineyard.',
-      image: '/lovable-uploads/fe270892-e18c-40c2-b152-d032913205f9.png',
+      image: '/lovable-uploads/029a7e04-0b4f-4047-bffe-d80abd183f0b.png',
       url: 'https://sulawines.com',
       logo: true,
     },
@@ -205,6 +207,51 @@ const Portfolio = () => {
       url: 'https://bbsourced.com',
       logo: true,
     },
+    {
+      id: 22,
+      title: 'Kalpan Agro-Tech',
+      category: 'agrotech',
+      description: 'Digital marketing and brand strategy for agro-technology company.',
+      image: '/lovable-uploads/8109bc25-59ff-41d5-a5f7-51cb21b0abfc.png',
+      url: 'https://kalpanagrotech.com',
+      logo: true,
+    },
+    {
+      id: 23,
+      title: 'Echo Education',
+      category: 'educational',
+      description: 'Marketing strategy and digital presence for educational institution.',
+      image: '/lovable-uploads/07996eb2-d2c7-47fd-b18c-7234d5d0c1f5.png',
+      url: 'https://echoeducation.in',
+      logo: true,
+    },
+    {
+      id: 24,
+      title: 'Symbiosis University',
+      category: 'educational',
+      description: 'Digital marketing strategy for educational institution.',
+      image: '/lovable-uploads/309ecc1a-2687-46a7-8b51-25ad0339a613.png',
+      url: 'https://siu.edu.in',
+      logo: true,
+    },
+    {
+      id: 25,
+      title: 'YCCE Engineering',
+      category: 'educational',
+      description: 'Digital presence and marketing strategy for engineering college.',
+      image: '/lovable-uploads/72bdd661-5d0b-413e-bfc1-6b099df16b7b.png',
+      url: 'https://ycce.edu',
+      logo: true,
+    },
+    {
+      id: 26,
+      title: 'Bühler Group',
+      category: 'agrotech',
+      description: 'Marketing strategy and brand development for agricultural technology company.',
+      image: '/lovable-uploads/93a0d241-23d4-410c-b93c-6291f8bad986.png',
+      url: 'https://buhlergroup.com',
+      logo: true,
+    },
   ];
 
   const filteredProjects = activeCategory === 'all' 
@@ -287,28 +334,36 @@ const Portfolio = () => {
               className="group rounded-xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-shadow duration-300 animate-fade-in"
               style={{ animationDelay: `${project.id * 0.1}s` }}
             >
-              <div className="relative overflow-hidden h-64 bg-[#f7f7f7] flex items-center justify-center p-8">
+              <div className="relative overflow-hidden h-64 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6">
                 <img 
                   src={project.image} 
                   alt={project.title} 
-                  className={project.logo ? "max-h-28 max-w-[80%] w-auto object-contain" : "w-full h-full object-cover"}
+                  className={project.logo ? "max-h-32 max-w-[85%] w-auto object-contain" : "w-full h-full object-cover"}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                  <div className="p-6">
-                    <a href={project.url} target="_blank" rel="noopener noreferrer" className="p-2 bg-white rounded-full inline-block mb-4">
-                      <ExternalLink size={20} className="text-blue" />
-                    </a>
+                  <div className="p-6 w-full">
+                    <div className="flex justify-between items-center">
+                      <a href={project.url} target="_blank" rel="noopener noreferrer" className="p-2 bg-white rounded-full inline-block">
+                        <ExternalLink size={20} className="text-blue" />
+                      </a>
+                      <span className="text-xs font-medium px-3 py-1 bg-white/90 text-blue rounded-full font-sf-pro-text">
+                        {categories.find(cat => cat.id === project.category)?.name}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 font-sf-pro">{project.title}</h3>
                 <p className="text-gray-600 mb-4 font-sf-pro-text">{project.description}</p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm font-medium px-3 py-1 bg-blue-light/10 text-blue rounded-full font-sf-pro-text">
-                    {categories.find(cat => cat.id === project.category)?.name}
-                  </span>
-                </div>
+                <a 
+                  href={project.url} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-blue hover:underline flex items-center gap-1 font-sf-pro-text"
+                >
+                  Visit Website <ExternalLink size={14} />
+                </a>
               </div>
             </div>
           ))}

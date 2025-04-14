@@ -1,48 +1,61 @@
 
 import React from 'react';
-import { Calendar, Building, GraduationCap } from 'lucide-react';
+import { Calendar, Building, GraduationCap, Server, Code } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
     {
       id: 1,
-      role: "Marketing Strategist & Website Builder",
+      role: "Performance Marketing Executive",
       company: "Tipple Works Co.",
-      period: "2024 - Present (9 months)",
-      description: "Contributing to branding, performance marketing, tech integration, and strategic development for high-profile D2C clients including Sula Vineyards, Paul and Mike Chocolates, and more.",
+      period: "September 2024 - Present (8 months)",
+      description: "Creating data-driven strategies using tools like Google Ads, Meta Ads, GA4, and GTM. Building automated marketing systems and supporting D2C and B2B brands with end-to-end solutions for E-commerce listings, Q-commerce, branding, and digital marketing.",
+      location: "Mumbai, Maharashtra, India",
       icon: Building,
       iconBg: "bg-blue-light/20",
       iconColor: "text-blue"
     },
     {
       id: 2,
-      role: "Marketing Intern",
-      company: "Echo Marketing Agency",
-      period: "2024 (6 months)",
-      description: "Assisted in developing marketing strategies, content creation, and social media campaigns for local businesses in Nagpur.",
-      icon: Calendar,
-      iconBg: "bg-orange-light/20",
-      iconColor: "text-orange"
-    },
-    {
-      id: 3,
-      role: "Certification in Marketing",
-      company: "Symbiosis Institute",
-      period: "November 2024",
-      description: "Completed specialized certification in digital marketing strategies, brand management, and consumer behavior analysis.",
-      icon: GraduationCap,
+      role: "Server & Administration Room Engineer",
+      company: "Kalpan Agro-Tech Industries Pvt. Ltd.",
+      period: "November 2023 - February 2024 (4 months)",
+      description: "Maintained high-performance servers with 24/7 operational efficiency. Operated advanced Bühler Group Sortex Machinery and supported management, marketing, branding, and advertising efforts.",
+      location: "Gumthala, Nagpur, Maharashtra",
+      icon: Server,
       iconBg: "bg-green-light/20",
       iconColor: "text-green"
     },
     {
+      id: 3,
+      role: "Performance Marketing Intern",
+      company: "Echo Education - Digital Marketing Course",
+      period: "March 2024 - August 2024 (6 months)",
+      description: "Transformed businesses digitally by boosting online presence. Designed and optimized websites, applied SEO and SEM techniques, and created high-impact ad campaigns across Meta and Facebook platforms.",
+      location: "Nagpur, Maharashtra, India",
+      icon: Code,
+      iconBg: "bg-orange-light/20",
+      iconColor: "text-orange"
+    },
+    {
       id: 4,
-      role: "B.E. in Electronics Engineering",
-      company: "Yashwantrao Chavan Engineering College",
-      period: "2024",
-      description: "Completed bachelor's degree in Electronics Engineering, building a strong foundation in technical knowledge and problem-solving skills.",
+      role: "Certification in Business Communication",
+      company: "Symbiosis International University",
+      period: "June 2024 - August 2024",
+      description: "Completed specialized certification in professional business communication strategies.",
       icon: GraduationCap,
       iconBg: "bg-blue-light/20",
       iconColor: "text-blue"
+    },
+    {
+      id: 5,
+      role: "Bachelor of Technology (BTech)",
+      company: "Yashwantrao Chavan College of Engineering",
+      period: "January 2020 - December 2024",
+      description: "Completed bachelor's degree in Electronics Engineering, building a strong foundation in technical knowledge and problem-solving skills.",
+      icon: GraduationCap,
+      iconBg: "bg-green-light/20",
+      iconColor: "text-green"
     }
   ];
 
@@ -76,6 +89,9 @@ const Experience = () => {
                       <div>
                         <h3 className="text-xl font-bold font-sf-pro">{exp.role}</h3>
                         <p className="text-gray-500 font-sf-pro-text">{exp.company}</p>
+                        {exp.location && (
+                          <p className="text-gray-400 text-sm font-sf-pro-text">{exp.location}</p>
+                        )}
                       </div>
                     </div>
                     <div className="mb-4 inline-block px-3 py-1 bg-gray-100 rounded-full text-sm text-gray-600 font-sf-pro-text">
