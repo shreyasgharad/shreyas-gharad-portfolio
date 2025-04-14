@@ -8,7 +8,7 @@ const About = () => {
       <div className="container">
         <h2 className="section-title">About Me</h2>
         <p className="section-subtitle">
-          A passionate marketing strategist and website builder from Nagpur, India, helping brands connect with their audiences.
+          A performance marketing specialist helping brands connect with their audiences through technology and strategy
         </p>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -21,12 +21,10 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 mt-4">My Journey</h3>
               <p className="text-gray-600 mb-6">
-                At 22, I've built a career in marketing strategy and tech integration. Currently at Tipple Works Co., 
-                I contribute to performance marketing, branding, and automation for major D2C brands.
+                At TippleWorks, I integrate technology with marketing to deliver measurable results. I specialize in performance marketing, automation, analytics, and e-commerce solutions for D2C and B2B brands.
               </p>
               <p className="text-gray-600">
-                My expertise in marketing, design, and technology helps bridge creative vision and technical execution,
-                enabling brands to create cohesive digital experiences that drive measurable results.
+                My expertise in marketing strategy, technical implementation, and data analysis helps brands achieve impactful growth in the competitive digital landscape.
               </p>
             </div>
           </div>
@@ -39,7 +37,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Professional Focus</h3>
                 <p className="text-gray-600">
-                  Creating data-driven marketing strategies and automated systems for D2C brands and startups.
+                  Creating data-driven marketing strategies and automated systems for brands using Google Ads, Meta Ads, GA4, and GTM.
                 </p>
               </div>
             </div>

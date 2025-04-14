@@ -1,9 +1,10 @@
 
 import React from 'react';
 import { ArrowRight, Download, MessageCircle } from 'lucide-react';
+import PartnerLogos from './PartnerLogos';
 
 const Hero = () => {
-  const whatsappMessage = "hii! shreyas, Came accross your website & portfolio want to talk";
+  const whatsappMessage = "Hi Shreyas! I came across your website & portfolio and would like to connect.";
   const encodedMessage = encodeURIComponent(whatsappMessage);
   const whatsappLink = `https://wa.me/918412971907?text=${encodedMessage}`;
 
@@ -42,7 +43,10 @@ const Hero = () => {
                 WhatsApp Me <MessageCircle size={18} />
               </a>
             </div>
+            
+            <PartnerLogos />
           </div>
+          
           <div className="md:w-1/2 flex justify-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-blue-light/20 absolute -top-5 -left-5"></div>
