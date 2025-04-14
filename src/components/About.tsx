@@ -21,8 +21,8 @@ const About = () => {
               </div>
               <h3 className="text-xl font-bold mb-4 mt-4">My Journey</h3>
               <p className="text-gray-600 mb-6">
-                At 22, I've built a career in marketing strategy and web development. Currently at Tipple Works Co., 
-                I contribute to branding, performance marketing, and tech integration for major D2C brands.
+                At 22, I've built a career in marketing strategy and tech integration. Currently at Tipple Works Co., 
+                I contribute to performance marketing, branding, and automation for major D2C brands.
               </p>
               <p className="text-gray-600">
                 My expertise in marketing, design, and technology helps bridge creative vision and technical execution,
@@ -51,7 +51,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Education & Learning</h3>
                 <p className="text-gray-600">
-                  BTech in Electronics Engineering with additional certification in Business Communication from Symbiosis.
+                  BTech in Electronics Engineering with certification in Business Communication from Symbiosis (Nov 2024).
                 </p>
               </div>
             </div>

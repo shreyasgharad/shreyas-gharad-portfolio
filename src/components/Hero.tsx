@@ -56,30 +56,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        
-        <div className="mt-24 py-8 border-t border-gray-200">
-          <p className="text-center text-gray-500 mb-8 font-sf-pro-text">Our Prime Clients:</p>
-          <div className="flex flex-wrap justify-center items-center gap-8 px-4">
-            <div className="h-16 w-auto flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 shadow-sm hover:shadow-md transition-all">
-              <img src="/lovable-uploads/029a7e04-0b4f-4047-bffe-d80abd183f0b.png" alt="Sula Vineyards" className="h-10 object-contain" />
-            </div>
-            <div className="h-16 w-auto flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 shadow-sm hover:shadow-md transition-all">
-              <img src="/lovable-uploads/be437b36-52d5-4f8a-bbb2-003080267730.png" alt="Zomato" className="h-10 object-contain" />
-            </div>
-            <div className="h-16 w-auto flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 shadow-sm hover:shadow-md transition-all">
-              <img src="/lovable-uploads/f1d0d43f-4f48-4a53-8abd-6a582ef66875.png" alt="Kiddopia" className="h-10 object-contain" />
-            </div>
-            <div className="h-16 w-auto flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 shadow-sm hover:shadow-md transition-all">
-              <img src="/lovable-uploads/30223106-d65d-47e7-bea5-5ac763a6f4b6.png" alt="Beyond by Sula" className="h-10 object-contain" />
-            </div>
-            <div className="h-16 w-auto flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 shadow-sm hover:shadow-md transition-all">
-              <img src="/lovable-uploads/f8448d9c-6c10-4b16-96b8-32c56cdbb71f.png" alt="Paul and Mike" className="h-10 object-contain" />
-            </div>
-            <div className="h-16 w-auto flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 rounded-lg p-4 shadow-sm hover:shadow-md transition-all">
-              <img src="/lovable-uploads/8109bc25-59ff-41d5-a5f7-51cb21b0abfc.png" alt="Kalpan Agro-Tech" className="h-10 object-contain" />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -17,13 +17,13 @@ const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState('all');
 
   const projects = [
-    // Make Sula first as the prime client
+    // Sula as prime client
     {
       id: 1,
       title: 'Sula Vineyards',
       category: 'beverages',
       description: 'Branding and performance marketing strategy for India\'s leading vineyard.',
-      image: '/lovable-uploads/029a7e04-0b4f-4047-bffe-d80abd183f0b.png',
+      image: '/lovable-uploads/feefd0c1-91fb-48c4-89c0-e8057e961f6b.png', // Updated Sula logo
       url: 'https://sulawines.com',
       logo: true,
     },
@@ -32,7 +32,7 @@ const Portfolio = () => {
       title: 'York Winery',
       category: 'beverages',
       description: 'Digital marketing and social media management for premium winery.',
-      image: '/lovable-uploads/aa3bd555-477c-4d43-9723-519e496e8859.png',
+      image: '/lovable-uploads/5ba887d5-b7b8-4e50-acef-35b72ac4c2e5.png', // Updated York logo
       url: 'https://yorkwinery.com',
       logo: true,
     },
@@ -41,7 +41,7 @@ const Portfolio = () => {
       title: 'Sprig',
       category: 'beverages',
       description: 'Brand identity and website design for gourmet food brand.',
-      image: '/lovable-uploads/cbbc2c43-c4db-440a-bb80-c4b090690081.png',
+      image: '/lovable-uploads/e3ba46e0-999c-40e7-a92b-3d7b417abf5f.png', // Updated Sprig logo
       url: 'https://spriggourmet.com',
       logo: true,
     },
@@ -77,7 +77,7 @@ const Portfolio = () => {
       title: 'Beyond by Sula',
       category: 'hotels',
       description: 'Launch campaign and digital strategy for Sula\'s premium hospitality collection.',
-      image: '/lovable-uploads/30223106-d65d-47e7-bea5-5ac763a6f4b6.png',
+      image: '/lovable-uploads/373c91e1-305a-40ac-bbef-b4c2c9f2ea29.png', // Updated Beyond by Sula logo
       url: 'https://sulawines.com/beyond',
       logo: true,
     },
@@ -86,7 +86,7 @@ const Portfolio = () => {
       title: 'The Source',
       category: 'hotels',
       description: 'Marketing and online booking strategy for boutique hotel property.',
-      image: '/lovable-uploads/6d5cd239-feca-4c90-9736-5c3610c27335.png',
+      image: '/lovable-uploads/41e3841b-40ac-490b-9fe6-1048b5a75d55.png', // Updated The Source logo
       url: 'https://thesource.co.in',
       logo: true,
     },
@@ -95,7 +95,7 @@ const Portfolio = () => {
       title: 'Paul and Mike',
       category: 'fmcg',
       description: 'Website development and digital marketing campaign for premium chocolate brand.',
-      image: '/lovable-uploads/f8448d9c-6c10-4b16-96b8-32c56cdbb71f.png',
+      image: '/lovable-uploads/b2d03930-58cc-4ccb-a1e4-b79805cbf77b.png', // Updated Paul and Mike logo
       url: 'https://paulandmike.co',
       logo: true,
     },
@@ -113,7 +113,7 @@ const Portfolio = () => {
       title: 'Provogue',
       category: 'fmcg',
       description: 'Digital marketing strategy and brand revitalization for fashion retail.',
-      image: '/lovable-uploads/5e755bf9-e879-4200-8e3c-5cf7602952fa.png',
+      image: '/lovable-uploads/44a0c103-a89f-4318-b9c7-87f8395e71ff.png', // Updated Provogue logo
       url: 'https://provogue.com',
       logo: true,
     },
@@ -185,7 +185,7 @@ const Portfolio = () => {
       title: 'DSG Partners',
       category: 'fmcg',
       description: 'Marketing strategy and digital presence for consumer goods distributor.',
-      image: '/lovable-uploads/1e76d229-143a-4bcb-a93c-f99b8025daf5.png',
+      image: '/lovable-uploads/a281b0da-c2cc-4073-bb78-a2a128287819.png', // Updated DSG logo
       url: 'https://dsgpartners.com',
       logo: true,
     },
@@ -194,7 +194,7 @@ const Portfolio = () => {
       title: 'Rasa Wines',
       category: 'beverages',
       description: 'Brand development and digital marketing for wine company.',
-      image: '/lovable-uploads/2428e18f-1ddb-4368-90d1-78131b60e4f7.png',
+      image: '/lovable-uploads/2c3f13fc-4830-4e56-af8c-78f7f54a1bab.png', // Updated Rasa logo
       url: 'https://rasawines.com',
       logo: true,
     },
@@ -332,7 +332,7 @@ const Portfolio = () => {
             <div 
               key={project.id} 
               className="group rounded-xl overflow-hidden bg-white shadow-md hover:shadow-xl transition-shadow duration-300 animate-fade-in"
-              style={{ animationDelay: `${project.id * 0.1}s` }}
+              style={{ animationDelay: `${(project.id % 10) * 0.1}s` }}
             >
               <div className="relative overflow-hidden h-64 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6">
                 <img 
