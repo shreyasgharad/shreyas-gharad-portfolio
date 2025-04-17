@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { ExternalLink, Github, Linkedin, Instagram } from 'lucide-react';
 
@@ -17,13 +16,12 @@ const Portfolio = () => {
   const [activeCategory, setActiveCategory] = useState('all');
 
   const projects = [
-    // Sula as prime client
     {
       id: 1,
       title: 'Sula Vineyards',
       category: 'beverages',
       description: 'Branding and performance marketing strategy for India\'s leading vineyard.',
-      image: '/lovable-uploads/feefd0c1-91fb-48c4-89c0-e8057e961f6b.png', // Updated Sula logo
+      image: "/lovable-uploads/f7c236a5-f7cb-4465-a976-0b94cf32ffe2.png",  // Updated logo
       url: 'https://sulawines.com',
       logo: true,
     },

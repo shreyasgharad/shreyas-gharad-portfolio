@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { 
   Carousel,
@@ -13,7 +12,7 @@ import Autoplay from 'embla-carousel-autoplay';
 const partnerLogos = [
   {
     name: "Sula Vineyards",
-    image: "/lovable-uploads/761bc06e-78c6-4c26-a2cd-5534052fb33e.png"
+    image: "/lovable-uploads/f7c236a5-f7cb-4465-a976-0b94cf32ffe2.png"
   },
   {
     name: "York Winery",
