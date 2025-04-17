@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+
+import React, { useRef } from 'react';
 import { 
   Carousel,
   CarouselContent,
@@ -12,83 +13,83 @@ import Autoplay from 'embla-carousel-autoplay';
 const partnerLogos = [
   {
     name: "Sula Vineyards",
-    image: "/lovable-uploads/f7c236a5-f7cb-4465-a976-0b94cf32ffe2.png"
+    image: "/lovable-uploads/584abe14-11a3-426f-bbb0-ddd32911cb0f.png"
   },
   {
     name: "York Winery",
-    image: "/lovable-uploads/64a779b3-cac8-4718-a247-29074f1b9e4c.png"
+    image: "/lovable-uploads/040cb552-0995-44a9-aaef-f6d276755274.png"
   },
   {
     name: "Paul and Mike",
-    image: "/lovable-uploads/5d6ef3e2-b1e7-451d-865d-0b44da746473.png"
+    image: "/lovable-uploads/9c483a69-c733-4d9f-8b52-1f7ee7685047.png"
   },
   {
     name: "Copper Grillhouse",
-    image: "/lovable-uploads/ca197467-1822-4a78-aa7f-e44aa3c07c03.png"
+    image: "/lovable-uploads/df800f42-3dd1-4e69-9e41-91e590e63d6b.png"
   },
   {
     name: "Beyond by Sula",
-    image: "/lovable-uploads/68fcf3e8-cc98-4e45-ae25-46c25727d039.png"
+    image: "/lovable-uploads/dd4b791a-41ef-4907-8800-cec3520d785f.png"
   },
   {
     name: "The Source",
-    image: "/lovable-uploads/34b37801-d8fa-4c9c-b2ed-2ac6ea710250.png"
+    image: "/lovable-uploads/7da160d6-deec-40e0-9771-334b855d2538.png"
   },
   {
     name: "Sprig",
-    image: "/lovable-uploads/671722e4-5c89-4fa8-a6c8-5881ab446850.png"
+    image: "/lovable-uploads/c687cfdb-57cb-48a8-94e4-1db8961f034f.png"
   },
   {
     name: "Provogue",
-    image: "/lovable-uploads/4b8b9ba3-4cd0-4263-bec3-b71bc7846b7c.png"
+    image: "/lovable-uploads/0cca9ac1-423c-4af1-9e18-6c4f0cbe36f9.png"
   },
   {
     name: "DSG Partners",
-    image: "/lovable-uploads/e2d9a97b-aaf3-4db2-abe7-104ac99a93c6.png"
+    image: "/lovable-uploads/d9a47fb1-3456-411c-82c1-ecaf4d72f799.png"
   },
   {
     name: "Rasa Wines",
-    image: "/lovable-uploads/611d14c9-ceae-4caa-b334-d170733c8f03.png"
+    image: "/lovable-uploads/4adee1c9-544e-43f3-ae4f-2b7213b4db22.png"
   },
   {
     name: "Space",
-    image: "/lovable-uploads/bb50ab5b-d4c4-42b0-8407-1f9a0c053a30.png"
+    image: "/lovable-uploads/56d6342a-00b5-48f9-a7b8-7b10e3b3384c.png"
   },
   {
     name: "Shakakan",
-    image: "/lovable-uploads/7dcd49ea-b27b-426c-b723-f6a9aa23a0a7.png"
+    image: "/lovable-uploads/beee0457-d2b1-488a-9f17-8556066bc177.png"
   },
   {
     name: "Matero",
-    image: "/lovable-uploads/c8c5b1a8-5070-42a8-94de-2bb08f911eac.png"
+    image: "/lovable-uploads/492b4409-e6e3-4046-a617-612c87a557d4.png"
   },
   {
     name: "Estate Monkeys",
-    image: "/lovable-uploads/786d741d-e8eb-4e8a-acc1-44d4c0986351.png"
+    image: "/lovable-uploads/16e538c6-ae77-4e9f-9f01-e028aa0151b6.png"
   },
   {
     name: "Elaan",
-    image: "/lovable-uploads/5e7fb7fc-a7d3-4a3d-9702-b305f8a79358.png"
+    image: "/lovable-uploads/b1f918a7-db69-4788-877e-9959e5a3f302.png"
   },
   {
     name: "Kiddopia",
-    image: "/lovable-uploads/103c1e12-4f65-4cd2-84d1-8a21790b351c.png"
+    image: "/lovable-uploads/3511b92c-3db8-40ac-a2d9-aa09abd2be88.png"
   },
   {
     name: "Naar",
-    image: "/lovable-uploads/542f3bca-d467-427f-8ba7-6feaa5b993ae.png"
+    image: "/lovable-uploads/4dbbaccf-2fbf-49a1-8dc1-0972e0e89e43.png"
   },
   {
     name: "BB Gourmet",
-    image: "/lovable-uploads/d95dc6f8-75f1-4eca-b6bf-3d33cc341b23.png"
+    image: "/lovable-uploads/04fe0c4c-4325-43ad-af35-7cb15843bb6f.png"
   },
   {
     name: "Momoland",
-    image: "/lovable-uploads/3416bf84-7b8d-4de4-9129-6e4329e57cd4.png"
+    image: "/lovable-uploads/9089bf45-aa01-41e4-90ef-f3f108d56d4f.png"
   },
   {
     name: "Buns & Slices",
-    image: "/lovable-uploads/4653f451-ae64-4029-aa56-c11d1ab183d6.png"
+    image: "/lovable-uploads/07e113cf-5a23-4e54-a1fa-285d87a929fd.png"
   }
 ];
 

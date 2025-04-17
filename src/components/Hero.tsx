@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { ArrowRight, Download, MessageCircle } from 'lucide-react';
-import PartnerLogos from './PartnerLogos';
 
 const Hero = () => {
   const whatsappMessage = "Hi Shreyas! I came across your website & portfolio and would like to connect.";
@@ -43,8 +42,6 @@ const Hero = () => {
                 WhatsApp Me <MessageCircle size={18} />
               </a>
             </div>
-            
-            <PartnerLogos />
           </div>
           
           <div className="md:w-1/2 flex justify-center animate-fade-in" style={{ animationDelay: '0.3s' }}>
