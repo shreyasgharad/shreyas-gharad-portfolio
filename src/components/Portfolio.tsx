@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { ExternalLink, Github, Linkedin, Instagram } from 'lucide-react';
 
@@ -30,7 +31,7 @@ const Portfolio = () => {
       title: 'York Winery',
       category: 'beverages',
       description: 'Digital marketing and social media management for premium winery.',
-      image: '/lovable-uploads/5ba887d5-b7b8-4e50-acef-35b72ac4c2e5.png', // Updated York logo
+      image: '/lovable-uploads/64a779b3-cac8-4718-a247-29074f1b9e4c.png', // Updated York logo
       url: 'https://yorkwinery.com',
       logo: true,
     },

@@ -16,7 +16,7 @@ const partnerLogos = [
   },
   {
     name: "York Winery",
-    image: "/lovable-uploads/9cd94d46-a96a-4644-9d66-100f6a259261.png"
+    image: "/lovable-uploads/64a779b3-cac8-4718-a247-29074f1b9e4c.png"
   },
   {
     name: "Paul and Mike",

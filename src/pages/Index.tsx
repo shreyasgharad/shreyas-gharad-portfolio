@@ -9,12 +9,14 @@ import Services from '../components/Services';
 import Blog from '../components/Blog';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import PartnerLogos from '../components/PartnerLogos';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+      <PartnerLogos />
       <About />
       <Experience />
       <Portfolio />
