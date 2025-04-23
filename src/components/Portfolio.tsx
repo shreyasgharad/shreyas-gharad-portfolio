@@ -160,6 +160,33 @@ const Portfolio = () => {
       url: 'https://bbsourced.com',
       logo: true,
     },
+    {
+      id: 17,
+      title: 'Estate Monkeys',
+      category: 'coffee',
+      description: 'Performance marketing and D2C strategy for premium coffee brand.',
+      image: "/lovable-uploads/4b47eb31-0f03-47a4-8cb5-642dc40c013a.png",
+      url: 'https://estatemonkeys.com',
+      logo: true,
+    },
+    {
+      id: 18,
+      title: 'Zealo',
+      category: 'fmcg',
+      description: 'D2C and B2B performance marketing strategy for corporate gifting solutions.',
+      image: "/lovable-uploads/7fdd6af0-3ec7-45a7-a3c3-8664d95a6f09.png",
+      url: 'https://zealo.in',
+      logo: true,
+    },
+    {
+      id: 19,
+      title: 'Beyond by Sula',
+      category: 'hotels',
+      description: 'Digital marketing and booking system for luxury villas, achieving 90% ROAS.',
+      image: "/lovable-uploads/a89a7818-b235-4129-819e-3784d8fd654a.png",
+      url: 'https://beyondbysula.com',
+      logo: true,
+    },
   ];
 
   const filteredProjects = activeCategory === 'all'

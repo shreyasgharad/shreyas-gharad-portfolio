@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { BarChart, Globe, Palette, Database, Server } from 'lucide-react';
+import { BarChart, Globe, Palette, Database, Server, Settings2 } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -38,6 +37,13 @@ const Services = () => {
       description: 'Implementing and optimizing business technology systems, database management, and enterprise resource planning solutions.',
       icon: Server,
       color: 'bg-red-600',
+    },
+    {
+      id: 6,
+      title: 'Workflow Automation',
+      description: 'Custom automation solutions including marketing workflows, AI implementation, NAS installations, and agency process optimization.',
+      icon: Settings2,
+      color: 'bg-teal-600',
     },
   ];
 
