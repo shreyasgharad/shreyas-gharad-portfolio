@@ -6,10 +6,10 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      role: "Performance Marketing Executive",
+      role: "Digital Growth Executive",
       company: "Tipple Works Co.",
-      period: "September 2023 - Present (8 months)",
-      description: "Creating data-driven marketing strategies using Google Ads, Meta Ads, GA4, and GTM. Building automated marketing systems for D2C and B2B brands with e-commerce, Q-commerce, branding, and digital marketing solutions.",
+      period: "September 2024 - Present",
+      description: "Leading digital transformation initiatives, developing comprehensive growth strategies, and managing high-impact marketing campaigns across multiple channels. Overseeing data analytics, customer journey optimization, and implementing innovative digital solutions for enhanced brand performance and revenue growth.",
       location: "Mumbai, Maharashtra, India",
       icon: Building,
       iconBg: "bg-blue-light/20",
@@ -17,6 +17,17 @@ const Experience = () => {
     },
     {
       id: 2,
+      role: "Performance Marketing Executive",
+      company: "Tipple Works Co.",
+      period: "September 2023 - September 2024 (8 months)",
+      description: "Created data-driven marketing strategies using Google Ads, Meta Ads, GA4, and GTM. Built automated marketing systems for D2C and B2B brands with e-commerce, Q-commerce, branding, and digital marketing solutions.",
+      location: "Mumbai, Maharashtra, India",
+      icon: Building,
+      iconBg: "bg-blue-light/20",
+      iconColor: "text-blue"
+    },
+    {
+      id: 3,
       role: "Server & Administration Room Engineer",
       company: "Kalpan Agro-Tech Industries Pvt. Ltd.",
       period: "November 2023 - February 2024 (4 months)",
@@ -27,7 +38,7 @@ const Experience = () => {
       iconColor: "text-green"
     },
     {
-      id: 3,
+      id: 4,
       role: "Performance Marketing Intern",
       company: "Echo Education - Digital Marketing Course",
       period: "March 2024 - August 2024 (6 months)",
@@ -38,7 +49,7 @@ const Experience = () => {
       iconColor: "text-orange"
     },
     {
-      id: 4,
+      id: 5,
       role: "Certification in Business Communication",
       company: "Symbiosis International University",
       period: "November 2023 - January 2024",
@@ -48,11 +59,11 @@ const Experience = () => {
       iconColor: "text-blue"
     },
     {
-      id: 5,
+      id: 6,
       role: "Bachelor of Technology (BTech)",
       company: "Yashwantrao Chavan College of Engineering",
-      period: "January 2020 - December 2023",
-      description: "Completed bachelor's degree in Electronics Engineering, building a strong foundation in technical knowledge and problem-solving skills.",
+      period: "January 2020 - December 2024",
+      description: "Completing bachelor's degree in Electronics Engineering, building a strong foundation in technical knowledge and problem-solving skills.",
       icon: GraduationCap,
       iconBg: "bg-green-light/20",
       iconColor: "text-green"
