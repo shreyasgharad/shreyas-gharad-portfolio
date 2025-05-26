@@ -51,16 +51,22 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href} 
+            <a
+              key={link.name}
+              href={link.href}
               className="font-medium text-gray-700 hover:text-blue transition-colors duration-300 font-sf-pro-text"
             >
               {link.name}
             </a>
           ))}
-          <a 
-            href="#contact" 
+          <Link
+            to="/businesses"
+            className="font-medium text-gray-700 hover:text-blue transition-colors duration-300 font-sf-pro-text"
+          >
+            Businesses
+          </Link>
+          <a
+            href="#contact"
             className="btn-primary shadow-lg hover:shadow-blue/25 transition-all duration-300"
           >
             Get In Touch
@@ -85,17 +91,24 @@ const Navbar = () => {
       >
         <div className="container py-20 flex flex-col space-y-6">
           {navLinks.map((link) => (
-            <a 
-              key={link.name} 
-              href={link.href} 
+            <a
+              key={link.name}
+              href={link.href}
               className="text-xl font-medium text-gray-800 hover:text-blue transition-colors duration-300 font-sf-pro"
               onClick={() => setMobileMenuOpen(false)}
             >
               {link.name}
             </a>
           ))}
-          <a 
-            href="#contact" 
+          <Link
+            to="/businesses"
+            className="text-xl font-medium text-gray-800 hover:text-blue transition-colors duration-300 font-sf-pro"
+            onClick={() => setMobileMenuOpen(false)}
+          >
+            Businesses
+          </Link>
+          <a
+            href="#contact"
             className="btn-primary shadow-lg hover:shadow-blue/25 transition-all duration-300 inline-block text-center"
             onClick={() => setMobileMenuOpen(false)}
           >
