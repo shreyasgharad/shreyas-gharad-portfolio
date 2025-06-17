@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
@@ -43,8 +42,8 @@ const TestimonialsSwiper = () => {
             spaceBetween={30}
             pagination={{
               clickable: true,
-              bulletClass: 'swiper-pagination-bullet !bg-blue',
-              bulletActiveClass: 'swiper-pagination-bullet-active !bg-blue-dark',
+              bulletClass: 'swiper-pagination-bullet !bg-blue-600',
+              bulletActiveClass: 'swiper-pagination-bullet-active !bg-blue-700',
             }}
             autoplay={{
               delay: 5000,

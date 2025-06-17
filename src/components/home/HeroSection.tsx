@@ -45,7 +45,7 @@ const HeroSection = () => {
             <Link to="/contact">
               <Button 
                 size="lg" 
-                className="bg-blue text-white hover:bg-blue-dark px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 group"
+                className="bg-blue-600 text-white hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 group"
               >
                 Book a Strategy Call
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

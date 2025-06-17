@@ -1,7 +1,6 @@
 
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -66,22 +65,22 @@ const FeaturedCaseStudy = () => {
             <div className="p-8 bg-white">
               <div className="grid md:grid-cols-3 gap-6 mb-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue mb-2">300%</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">300%</div>
                   <div className="text-gray-600">ROI Increase</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue mb-2">250%</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">250%</div>
                   <div className="text-gray-600">Sales Growth</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue mb-2">90%</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">90%</div>
                   <div className="text-gray-600">Lead Quality</div>
                 </div>
               </div>
               
               <h3 className="text-2xl font-bold mb-3">{featured.name}</h3>
               <p className="text-gray-600 mb-4">{featured.description}</p>
-              <div className="inline-block bg-blue-50 text-blue px-3 py-1 rounded-full text-sm font-medium">
+              <div className="inline-block bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">
                 {featured.category}
               </div>
             </div>

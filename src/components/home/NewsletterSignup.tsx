@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { useForm } from 'react-hook-form';
 import { Button } from '@/components/ui/button';
@@ -78,7 +77,7 @@ const NewsletterSignup = () => {
             <Button
               type="submit"
               disabled={isSubmitting}
-              className="bg-white text-blue hover:bg-gray-100 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
+              className="bg-white text-blue-600 hover:bg-gray-100 font-semibold shadow-lg hover:shadow-xl transition-all duration-300 group"
             >
               {isSubmitting ? 'Subscribing...' : 'Subscribe'}
               {!isSubmitting && <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />}

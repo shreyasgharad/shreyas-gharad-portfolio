@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { VALUE_PROPS } from '@/constants/valueProps';
 
@@ -41,7 +40,7 @@ const ValuePropositionCards = () => {
               <h3 className="text-xl font-bold mb-4 text-gray-900">{prop.title}</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">{prop.description}</p>
               <div className="bg-blue-50 rounded-lg p-4">
-                <span className="text-blue font-semibold text-sm">{prop.metrics}</span>
+                <span className="text-blue-600 font-semibold text-sm">{prop.metrics}</span>
               </div>
             </motion.div>
           ))}
