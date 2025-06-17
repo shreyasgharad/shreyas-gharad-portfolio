@@ -1,0 +1,40 @@
+
+name: Accessibility Audit
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  accessibility:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Build application
+      run: npm run build
+      
+    - name: Install axe-core CLI
+      run: npm install -g @axe-core/cli
+      
+    - name: Serve built app
+      run: |
+        npx serve -s dist -p 3000 &
+        sleep 5
+        
+    - name: Run axe accessibility tests
+      run: |
+        axe http://localhost:3000 --exit --tags wcag2a,wcag2aa --threshold 5
