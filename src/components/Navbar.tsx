@@ -43,31 +43,31 @@ const Navbar = () => {
       <div className="container flex justify-between items-center">
         <Link 
           to="/" 
-          className="text-xl md:text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent font-sf-pro hover:opacity-80 transition-opacity"
+          className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent font-sf-pro hover:opacity-80 transition-opacity"
         >
-          IndiaAds
+          SG
         </Link>
         
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-4 lg:space-x-8">
+        <div className="hidden md:flex items-center space-x-8">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="font-medium text-gray-700 hover:text-blue transition-colors duration-300 font-sf-pro-text text-sm lg:text-base"
+              className="font-medium text-gray-700 hover:text-blue transition-colors duration-300 font-sf-pro-text"
             >
               {link.name}
             </a>
           ))}
           <Link
             to="/businesses"
-            className="font-medium text-gray-700 hover:text-blue transition-colors duration-300 font-sf-pro-text text-sm lg:text-base"
+            className="font-medium text-gray-700 hover:text-blue transition-colors duration-300 font-sf-pro-text"
           >
             Businesses
           </Link>
           <a
             href="#contact"
-            className="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-4 py-2 lg:px-6 lg:py-3 rounded-lg font-medium shadow-lg hover:shadow-blue/25 transition-all duration-300 text-sm lg:text-base hover:scale-105 transform"
+            className="btn-primary shadow-lg hover:shadow-blue/25 transition-all duration-300"
           >
             Get In Touch
           </a>
@@ -109,7 +109,7 @@ const Navbar = () => {
           </Link>
           <a
             href="#contact"
-            className="bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-3 rounded-lg font-medium shadow-lg hover:shadow-blue/25 transition-all duration-300 inline-block text-center hover:scale-105 transform"
+            className="btn-primary shadow-lg hover:shadow-blue/25 transition-all duration-300 inline-block text-center"
             onClick={() => setMobileMenuOpen(false)}
           >
             Get In Touch

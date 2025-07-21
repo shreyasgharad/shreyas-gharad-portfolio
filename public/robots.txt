@@ -1,24 +1,14 @@
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
 
 User-agent: *
 Allow: /
-
-# Sitemaps
-Sitemap: https://shreyasgharad.com/sitemap.xml
-
-# Block crawling of unnecessary files
-Disallow: /src/
-Disallow: /*.js$
-Disallow: /*.css$
-Disallow: /node_modules/
-
-# Allow crawling of main content
-Allow: /
-Allow: /about
-Allow: /portfolio
-Allow: /services
-Allow: /businesses
-Allow: /blog
-Allow: /contact
-
-# Crawl-delay
-Crawl-delay: 1
