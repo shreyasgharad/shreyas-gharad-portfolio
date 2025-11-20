@@ -69,17 +69,15 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-6">My Vision</h3>
-            <blockquote className="border-l-4 border-blue pl-4 mb-6">
-              <p className="text-gray-400 italic">
-                "I dream of creating an MNC that uplifts Indian businesses globally."
-              </p>
-            </blockquote>
+            <h3 className="text-xl font-bold mb-6">Get Started</h3>
+            <p className="text-gray-400 mb-6">
+              Ready to elevate your brand's digital presence? Let's discuss how we can work together to achieve your goals.
+            </p>
             <a 
-              href="#portfolio"
+              href="#contact"
               className="inline-flex items-center px-5 py-2 rounded-lg bg-blue text-white hover:bg-blue-dark transition-colors"
             >
-              View My Work
+              Contact Me
             </a>
           </div>
         </div>

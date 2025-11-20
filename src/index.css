@@ -119,7 +119,37 @@
     }
   }
 
+  @keyframes slide-in-text {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
   .animate-fade-in {
     animation: fade-in 0.6s ease-out forwards;
+  }
+
+  .animate-slide-in-text {
+    animation: slide-in-text 1s ease-out forwards;
+  }
+
+  .animate-scroll {
+    animation: scroll 30s linear infinite;
   }
 }

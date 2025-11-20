@@ -51,9 +51,9 @@ const partnerLogos = [
 const PartnerLogos = () => {
   const autoplayPlugin = useRef(
     Autoplay({ 
-      delay: 2000,
+      delay: 0,
       stopOnInteraction: false,
-      stopOnMouseEnter: true,
+      stopOnMouseEnter: false,
     })
   );
 
@@ -68,12 +68,13 @@ const PartnerLogos = () => {
         opts={{
           align: "start",
           loop: true,
+          dragFree: true,
         }}
         plugins={[autoplayPlugin.current]}
-        className="w-full relative"
+        className="w-full relative overflow-hidden"
       >
-        <CarouselContent className="-ml-2 md:-ml-4">
-          {partnerLogos.map((logo, index) => (
+        <CarouselContent className="-ml-2 md:-ml-4 animate-scroll">
+          {[...partnerLogos, ...partnerLogos].map((logo, index) => (
             <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/3 md:basis-1/4 lg:basis-1/5 transition-opacity duration-300 animate-fade-in-right" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="p-4 h-28 flex items-center justify-center bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105">
                 <img 
@@ -85,8 +86,6 @@ const PartnerLogos = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="left-0 md:-left-4 border-none bg-white/80 hover:bg-white shadow-md" />
-        <CarouselNext className="right-0 md:-right-4 border-none bg-white/80 hover:bg-white shadow-md" />
       </Carousel>
     </div>
   );

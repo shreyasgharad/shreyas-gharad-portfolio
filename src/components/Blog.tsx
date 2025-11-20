@@ -1,7 +1,7 @@
-
 import React from 'react';
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+import { Helmet } from 'react-helmet';
 
 const Blog = () => {
   const blogPosts = [
@@ -40,12 +40,26 @@ const Blog = () => {
   ];
 
   return (
-    <section id="blog" className="bg-[#f9f9f9]">
-      <div className="container">
-        <h2 className="section-title font-sf-pro">Latest Thoughts</h2>
-        <p className="section-subtitle font-sf-pro-text">
-          Insights and perspectives on marketing, systems, and strategy.
-        </p>
+    <>
+      <Helmet>
+        <title>Digital Marketing Blog | Latest Strategies & Insights - Shreyas Gharad</title>
+        <meta name="description" content="Explore expert insights on performance marketing, SEO, paid advertising, and digital strategy. Learn proven tactics to grow your business online." />
+        <meta name="keywords" content="digital marketing blog, performance marketing, SEO strategies, paid advertising, marketing automation, conversion optimization, growth marketing" />
+        <link rel="canonical" href="https://shreyasgharad.com/blog" />
+        <meta property="og:title" content="Digital Marketing Blog - Expert Strategies & Insights" />
+        <meta property="og:description" content="Get the latest digital marketing strategies, SEO tips, and performance marketing insights to grow your business." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://shreyasgharad.com/blog" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Digital Marketing Blog - Expert Strategies" />
+        <meta name="twitter:description" content="Expert insights on performance marketing, SEO, and digital growth strategies." />
+      </Helmet>
+      <section id="blog" className="bg-[#f9f9f9]">
+        <div className="container">
+          <h2 className="section-title font-sf-pro">Latest Thoughts</h2>
+          <p className="section-subtitle font-sf-pro-text">
+            Insights and perspectives on marketing, systems, and strategy.
+          </p>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {blogPosts.map((post) => (
@@ -93,9 +107,10 @@ const Blog = () => {
           <a href="#" className="btn-outline font-sf-pro-text">
             View All Posts
           </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

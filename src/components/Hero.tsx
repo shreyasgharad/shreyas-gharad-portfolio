@@ -15,9 +15,11 @@ const Hero = () => {
             <div className="inline-block px-4 py-2 bg-blue-600/10 rounded-full text-blue-600 font-semibold mb-6 shadow-sm hover:shadow-md transition-all duration-300">
               👋 Hi, I'm Shreyas Gharad
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 font-sf-pro bg-gradient-to-r from-gray-900 via-blue-800 to-blue-900 bg-clip-text text-transparent animate-fade-in">
-              Helping Brands Grow through Tech, Marketing & Strategy{' '}
-              <span className="inline-block transform hover:scale-105 transition-transform duration-300">🚀</span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 font-sf-pro overflow-hidden">
+              <span className="inline-block animate-slide-in-text bg-gradient-to-r from-gray-900 via-blue-800 to-blue-900 bg-clip-text text-transparent">
+                Helping Brands Grow through Tech, Marketing & Strategy{' '}
+              </span>
+              <span className="inline-block transform hover:scale-105 transition-transform duration-300 animate-fade-in" style={{ animationDelay: '1.2s' }}>🚀</span>
             </h1>
             <p className="text-lg text-gray-600 mb-8 max-w-lg font-sf-pro-text animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Performance Marketing Executive at{' '}
