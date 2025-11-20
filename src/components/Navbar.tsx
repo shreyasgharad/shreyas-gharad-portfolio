@@ -41,12 +41,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex justify-between items-center">
-        <Link 
-          to="/" 
-          className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent font-sf-pro hover:opacity-80 transition-opacity"
-        >
-          SG
-        </Link>
+        <div className="h-8" />
         
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-8">
@@ -85,7 +80,7 @@ const Navbar = () => {
       
       {/* Mobile Menu Panel */}
       <div 
-        className={`md:hidden fixed inset-0 bg-white/95 backdrop-blur-lg transition-transform duration-300 ease-in-out transform ${
+        className={`md:hidden fixed inset-0 bg-white backdrop-blur-xl shadow-2xl transition-transform duration-300 ease-in-out transform ${
           mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
