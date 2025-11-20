@@ -51,7 +51,7 @@ const partnerLogos = [
 const PartnerLogos = () => {
   const autoplayPlugin = useRef(
     Autoplay({ 
-      delay: 0,
+      delay: 1500, // Faster scroll with shorter delay
       stopOnInteraction: false,
       stopOnMouseEnter: false,
     })
@@ -77,10 +77,15 @@ const PartnerLogos = () => {
           {[...partnerLogos, ...partnerLogos].map((logo, index) => (
             <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/3 md:basis-1/4 lg:basis-1/5 transition-opacity duration-300 animate-fade-in-right" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="p-4 h-28 flex items-center justify-center bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105">
+                {/* Mobile: Show name only */}
+                <span className="md:hidden text-sm font-semibold text-gray-700 text-center">
+                  {logo.name}
+                </span>
+                {/* Desktop: Show logo */}
                 <img 
                   src={logo.image} 
                   alt={`${logo.name} logo`} 
-                  className="max-h-16 max-w-[80%] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+                  className="hidden md:block max-h-16 max-w-[80%] object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
                 />
               </div>
             </CarouselItem>

@@ -80,7 +80,7 @@ const Navbar = () => {
       
       {/* Mobile Menu Panel */}
       <div 
-        className={`md:hidden fixed inset-0 bg-white backdrop-blur-xl shadow-2xl transition-transform duration-300 ease-in-out transform ${
+        className={`md:hidden fixed inset-0 bg-white/95 backdrop-blur-lg shadow-2xl transition-transform duration-300 ease-in-out transform z-50 ${
           mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
