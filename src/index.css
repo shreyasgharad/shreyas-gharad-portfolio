@@ -63,21 +63,30 @@
 
   * {
     @apply border-border;
+    box-sizing: border-box;
+  }
+
+  html {
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 
   body {
     @apply bg-background text-foreground font-sans;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
   }
 
   section {
     @apply py-20;
+    overflow-x: hidden;
   }
 }
 
 @layer components {
   .container {
-    @apply px-4 md:px-8 max-w-7xl mx-auto;
+    @apply px-5 md:px-8 max-w-7xl mx-auto w-full;
   }
   
   .section-title {
