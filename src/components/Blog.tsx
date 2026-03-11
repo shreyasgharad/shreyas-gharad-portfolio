@@ -1,55 +1,22 @@
 import React from 'react';
-import { ArrowRight, Calendar } from 'lucide-react';
+import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import { blogPosts } from '@/data/blogPosts';
 
 const Blog = () => {
-  const blogPosts = [
-    {
-      id: 1,
-      title: 'US-India Tariff Reduction: Impact on Digital Advertising',
-      excerpt: 'A detailed analysis of the recent 6% tax reduction agreement between the US and India and how it affects the digital marketing landscape.',
-      date: 'April 5, 2025',
-      category: 'Strategy',
-      image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop',
-    },
-    {
-      id: 2,
-      title: 'How D2C Brands Can Leverage Social Media in 2025',
-      excerpt: 'Practical strategies for direct-to-consumer brands to maximize their social media presence and drive conversions.',
-      date: 'March 15, 2025',
-      category: 'Marketing',
-      image: 'https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?q=80&w=1974&auto=format&fit=crop',
-    },
-    {
-      id: 3,
-      title: 'Integrating ERP Systems for Small to Medium Businesses',
-      excerpt: 'A step-by-step guide on how smaller businesses can benefit from enterprise resource planning without breaking the bank.',
-      date: 'February 22, 2025',
-      category: 'Technology',
-      image: 'https://images.unsplash.com/photo-1579389083078-4e7018379f7e?q=80&w=2070&auto=format&fit=crop',
-    },
-    {
-      id: 4,
-      title: 'The Future of Indian D2C Brands in Global Markets',
-      excerpt: 'Exploring opportunities and challenges for Indian direct-to-consumer brands looking to expand internationally.',
-      date: 'January 10, 2025',
-      category: 'Strategy',
-      image: 'https://images.unsplash.com/photo-1493612276216-ee3925520721?q=80&w=1964&auto=format&fit=crop',
-    },
-  ];
-
   return (
     <>
       <Helmet>
         <title>Digital Marketing Blog | Latest Strategies & Insights - Shreyas Gharad</title>
         <meta name="description" content="Explore expert insights on performance marketing, SEO, paid advertising, and digital strategy. Learn proven tactics to grow your business online." />
         <meta name="keywords" content="digital marketing blog, performance marketing, SEO strategies, paid advertising, marketing automation, conversion optimization, growth marketing" />
-        <link rel="canonical" href="https://shreyasgharad.com/blog" />
+        <link rel="canonical" href="https://gharads.in/blog" />
         <meta property="og:title" content="Digital Marketing Blog - Expert Strategies & Insights" />
         <meta property="og:description" content="Get the latest digital marketing strategies, SEO tips, and performance marketing insights to grow your business." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://shreyasgharad.com/blog" />
+        <meta property="og:url" content="https://gharads.in/blog" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Digital Marketing Blog - Expert Strategies" />
         <meta name="twitter:description" content="Expert insights on performance marketing, SEO, and digital growth strategies." />
@@ -61,52 +28,90 @@ const Blog = () => {
             Insights and perspectives on marketing, systems, and strategy.
           </p>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {blogPosts.map((post) => (
-            <Card 
-              key={post.id} 
-              className="group overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 animate-fade-in bg-white border-none"
-              style={{ animationDelay: `${post.id * 0.1}s` }}
-            >
-              <div className="h-48 overflow-hidden relative">
-                <img 
-                  src={post.image} 
-                  alt={post.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute top-4 left-4 bg-blue text-white text-xs font-semibold px-3 py-1 rounded-full">
-                  {post.category}
+          {/* Featured post */}
+          <Link to={`/blog/${blogPosts[0].id}`} className="block mb-10 group">
+            <div className="relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 bg-white">
+              <div className="md:flex">
+                <div className="md:w-1/2 h-56 md:h-80 overflow-hidden">
+                  <img 
+                    src={blogPosts[0].image} 
+                    alt={blogPosts[0].title} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="md:w-1/2 p-6 md:p-10 flex flex-col justify-center">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="px-3 py-1 bg-blue-600 text-white text-xs font-bold rounded-full uppercase tracking-wide">
+                      {blogPosts[0].category}
+                    </span>
+                    <span className="text-xs text-gray-400 flex items-center gap-1">
+                      <Clock size={12} /> {blogPosts[0].readTime}
+                    </span>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold mb-3 group-hover:text-blue-700 transition-colors font-sf-pro">
+                    {blogPosts[0].title}
+                  </h3>
+                  <p className="text-gray-500 mb-4 font-sf-pro-text text-sm md:text-base">
+                    {blogPosts[0].excerpt}
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4">
+                    {blogPosts[0].tags.slice(0, 3).map(tag => (
+                      <span key={tag} className="px-2 py-0.5 bg-gray-100 text-gray-500 text-xs rounded-full">{tag}</span>
+                    ))}
+                  </div>
+                  <span className="inline-flex items-center text-blue-600 font-medium text-sm group-hover:gap-3 gap-2 transition-all font-sf-pro-text">
+                    Read Article <ArrowRight size={14} />
+                  </span>
                 </div>
               </div>
-              
-              <CardContent className="p-6">
-                <div className="flex items-center gap-2 text-gray-500 text-sm mb-3">
-                  <Calendar size={14} />
-                  <span className="font-sf-pro-text">{post.date}</span>
-                </div>
-                
-                <h3 className="text-xl font-bold mb-3 group-hover:text-blue transition-colors duration-300 font-sf-pro">
-                  {post.title}
-                </h3>
-                
-                <p className="text-gray-600 mb-4 font-sf-pro-text">{post.excerpt}</p>
-                
-                <a 
-                  href="#" 
-                  className="inline-flex items-center font-medium text-blue group-hover:text-blue-dark transition-colors font-sf-pro-text"
-                >
-                  Read more
-                  <ArrowRight size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
-                </a>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-        
-        <div className="mt-12 text-center">
-          <a href="#" className="btn-outline font-sf-pro-text">
-            View All Posts
-          </a>
+            </div>
+          </Link>
+
+          {/* Other posts grid */}
+          <div className="grid md:grid-cols-3 gap-6">
+            {blogPosts.slice(1).map((post) => (
+              <Link to={`/blog/${post.id}`} key={post.id}>
+                <Card className="group overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 bg-white border-none h-full">
+                  <div className="h-44 overflow-hidden relative">
+                    <img 
+                      src={post.image} 
+                      alt={post.title} 
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      loading="lazy"
+                    />
+                    <div className="absolute top-3 left-3 flex items-center gap-2">
+                      <span className="bg-blue-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wide">
+                        {post.category}
+                      </span>
+                    </div>
+                  </div>
+                  
+                  <CardContent className="p-5">
+                    <div className="flex items-center gap-3 text-gray-400 text-xs mb-2">
+                      <span className="flex items-center gap-1"><Calendar size={12} /> {post.date}</span>
+                      <span className="flex items-center gap-1"><Clock size={12} /> {post.readTime}</span>
+                    </div>
+                    
+                    <h3 className="text-base font-bold mb-2 group-hover:text-blue-700 transition-colors font-sf-pro line-clamp-2">
+                      {post.title}
+                    </h3>
+                    
+                    <p className="text-gray-500 text-sm mb-3 font-sf-pro-text line-clamp-2">{post.excerpt}</p>
+
+                    <div className="flex flex-wrap gap-1.5 mb-3">
+                      {post.tags.slice(0, 2).map(tag => (
+                        <span key={tag} className="px-2 py-0.5 bg-gray-100 text-gray-500 text-[10px] rounded-full">{tag}</span>
+                      ))}
+                    </div>
+                    
+                    <span className="inline-flex items-center font-medium text-blue-600 text-sm group-hover:gap-2 gap-1 transition-all font-sf-pro-text">
+                      Read more <ArrowRight size={14} />
+                    </span>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
