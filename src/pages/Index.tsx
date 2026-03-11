@@ -13,7 +13,7 @@ import PartnerLogos from '../components/PartnerLogos';
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden w-full">
       <Navbar />
       <Hero />
       <PartnerLogos />
