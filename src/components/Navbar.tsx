@@ -79,8 +79,18 @@ const Navbar = () => {
       </div>
       
       {/* Mobile Menu Panel */}
+      {/* Close button inside panel */}
+      {mobileMenuOpen && (
+        <button
+          className="md:hidden fixed top-4 right-4 z-[60] p-2 rounded-lg bg-white/80 shadow-md"
+          onClick={() => setMobileMenuOpen(false)}
+          aria-label="Close menu"
+        >
+          <X size={24} className="text-gray-900" />
+        </button>
+      )}
       <div 
-        className={`md:hidden fixed inset-0 bg-white/95 backdrop-blur-lg shadow-2xl transition-transform duration-300 ease-in-out transform z-50 ${
+        className={`md:hidden fixed inset-0 bg-white/70 backdrop-blur-2xl shadow-2xl transition-transform duration-300 ease-in-out transform z-50 ${
           mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
