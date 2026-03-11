@@ -136,7 +136,7 @@ const About = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Core Mission</h3>
                 <p className="text-gray-600">
-                  Building an MNC that elevates Indian businesses globally through innovative marketing strategies and technological solutions.
+                  Helping Indian homegrown brands scale globally and reach new heights — driven by the passion to put India on the world map through bold marketing, technology, and relentless ambition.
                 </p>
               </div>
             </div>
