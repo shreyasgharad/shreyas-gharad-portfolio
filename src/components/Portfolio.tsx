@@ -261,7 +261,27 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Mobile: Compact grid */}
+        <div className="grid grid-cols-3 gap-3 md:hidden">
+          {filteredProjects.map((project) => (
+            <a
+              key={project.id}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-lg shadow-sm p-3 flex items-center justify-center aspect-square hover:shadow-md transition-shadow"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="max-h-12 max-w-[90%] object-contain"
+              />
+            </a>
+          ))}
+        </div>
+
+        {/* Desktop: Full cards */}
+        <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <div
               key={project.id}
