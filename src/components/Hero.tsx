@@ -40,8 +40,8 @@ const Hero = () => {
       {/* Vignette */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.5)_100%)] pointer-events-none" />
 
-      {/* Bottom fade to white */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none z-20" />
+      {/* Extended bottom gradient - smooth fade to white */}
+      <div className="absolute bottom-0 left-0 right-0 h-[50vh] bg-gradient-to-t from-white via-white/60 via-40% to-transparent pointer-events-none z-20" />
 
       <div className="container relative z-10 pt-24 md:pt-32 pb-20 md:pb-32">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
