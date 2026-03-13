@@ -40,7 +40,7 @@ const Portfolio = () => {
       category: 'hotels',
       description: 'Marketing and online booking strategy for boutique hotel property.',
       image: '/lovable-uploads/2b1b229e-0a60-4970-9993-f84b70b5145d.png',
-      url: 'https://thesource.co.in',
+      url: 'https://thesourcevineyards.com/',
       logo: true,
     },
     {
