@@ -25,7 +25,7 @@ const Hero = () => {
       {/* Vignette */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.3)_100%)] pointer-events-none" />
 
-      <div className="container relative z-10 pt-24 md:pt-32 pb-20 md:pb-32">
+      <div className="container relative z-10 pt-12 md:pt-16 pb-20 md:pb-32">
         <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-16">
           
           {/* Text content */}

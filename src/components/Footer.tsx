@@ -1,8 +1,27 @@
 
 import React from 'react';
 import { ArrowUp } from 'lucide-react';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 
 const Footer = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      if (location.pathname !== '/') {
+        navigate('/' + href);
+      } else {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      }
+    }
+  };
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -42,28 +61,28 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a>
+                <a href="#home" onClick={(e) => handleNavClick(e, '#home')} className="text-gray-400 hover:text-white transition-colors">Home</a>
               </li>
               <li>
-                <a href="#about" className="text-gray-400 hover:text-white transition-colors">About Me</a>
+                <a href="#about" onClick={(e) => handleNavClick(e, '#about')} className="text-gray-400 hover:text-white transition-colors">About Me</a>
               </li>
               <li>
-                <a href="#experience" className="text-gray-400 hover:text-white transition-colors">Experience</a>
+                <a href="#experience" onClick={(e) => handleNavClick(e, '#experience')} className="text-gray-400 hover:text-white transition-colors">Experience</a>
               </li>
               <li>
-                <a href="#portfolio" className="text-gray-400 hover:text-white transition-colors">Portfolio</a>
+                <a href="#portfolio" onClick={(e) => handleNavClick(e, '#portfolio')} className="text-gray-400 hover:text-white transition-colors">Portfolio</a>
               </li>
               <li>
-                <a href="#services" className="text-gray-400 hover:text-white transition-colors">Services</a>
+                <a href="#services" onClick={(e) => handleNavClick(e, '#services')} className="text-gray-400 hover:text-white transition-colors">Services</a>
               </li>
               <li>
-                <a href="/businesses" className="text-gray-400 hover:text-white transition-colors">Businesses</a>
+                <Link to="/businesses" className="text-gray-400 hover:text-white transition-colors">Businesses</Link>
               </li>
               <li>
-                <a href="#blog" className="text-gray-400 hover:text-white transition-colors">Blog</a>
+                <a href="#blog" onClick={(e) => handleNavClick(e, '#blog')} className="text-gray-400 hover:text-white transition-colors">Blog</a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a>
+                <a href="#contact" onClick={(e) => handleNavClick(e, '#contact')} className="text-gray-400 hover:text-white transition-colors">Contact</a>
               </li>
             </ul>
           </div>
@@ -75,6 +94,7 @@ const Footer = () => {
             </p>
             <a 
               href="#contact"
+              onClick={(e) => handleNavClick(e, '#contact')}
               className="inline-flex items-center px-5 py-2 rounded-lg bg-blue text-white hover:bg-blue-dark transition-colors"
             >
               Contact Me

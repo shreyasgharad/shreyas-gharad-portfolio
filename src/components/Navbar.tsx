@@ -1,17 +1,30 @@
 
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    if (location.hash) {
+      setTimeout(() => {
+        const element = document.querySelector(location.hash);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location]);
 
   const navLinks = [
     { name: 'Home', href: '#home' },
@@ -22,6 +35,22 @@ const Navbar = () => {
     { name: 'Blog', href: '#blog' },
     { name: 'Contact', href: '#contact' },
   ];
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+    
+    if (location.pathname !== '/') {
+      navigate('/' + href);
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  };
 
   return (
     <nav 
@@ -39,6 +68,7 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className={`font-medium transition-all duration-500 font-sf-pro-text text-sm tracking-wide hover:scale-105 active:scale-95 ${
                 scrolled ? 'text-gray-700 hover:text-blue' : 'text-white/70 hover:text-white'
               }`}
@@ -56,6 +86,7 @@ const Navbar = () => {
           </Link>
           <a
             href="#contact"
+            onClick={(e) => handleNavClick(e, '#contact')}
             className={`px-6 py-2.5 rounded-xl font-medium text-sm transition-all duration-500 hover:scale-105 active:scale-95 ${
               scrolled 
                 ? 'bg-primary text-white shadow-lg shadow-primary/25' 
@@ -96,9 +127,9 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
+              onClick={(e) => handleNavClick(e, link.href)}
               className="text-xl font-medium text-gray-800 hover:text-blue transition-all duration-300 font-sf-pro active:scale-95"
               style={{ transitionDelay: mobileMenuOpen ? `${i * 50}ms` : '0ms' }}
-              onClick={() => setMobileMenuOpen(false)}
             >
               {link.name}
             </a>
@@ -112,8 +143,8 @@ const Navbar = () => {
           </Link>
           <a
             href="#contact"
+            onClick={(e) => handleNavClick(e, '#contact')}
             className="btn-primary shadow-lg text-center active:scale-95 transition-transform duration-200"
-            onClick={() => setMobileMenuOpen(false)}
           >
             Get In Touch
           </a>

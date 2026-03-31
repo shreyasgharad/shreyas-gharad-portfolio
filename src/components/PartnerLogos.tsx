@@ -76,7 +76,7 @@ const PartnerLogos = () => {
         <CarouselContent className="-ml-2 md:-ml-4 animate-scroll">
           {[...partnerLogos, ...partnerLogos].map((logo, index) => (
             <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/3 md:basis-1/4 lg:basis-1/5 transition-opacity duration-300 animate-fade-in-right" style={{ animationDelay: `${index * 0.1}s` }}>
-              <div className="p-3 md:p-4 h-20 md:h-28 flex items-center justify-center bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-105">
+              <div className="p-3 md:p-4 h-20 md:h-28 flex items-center justify-center bg-white rounded-xl shadow-lg border border-gray-100/50 hover:shadow-2xl hover:shadow-blue/20 transition-all duration-300 transform hover:scale-105">
                 <img 
                   src={logo.image} 
                   alt={`${logo.name} logo`} 

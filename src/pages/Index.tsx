@@ -29,9 +29,13 @@ const Index = () => {
         <Navbar />
         <Hero />
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/95 to-white pointer-events-none" style={{ top: '-200px' }} />
-          <div className="relative bg-white">
-            <PartnerLogos />
+          {/* Smooth, long gradient transition from hero to white body */}
+          <div className="w-full h-48 md:h-72 bg-gradient-to-b from-transparent to-white pointer-events-none" />
+          
+          <div className="relative bg-white pb-1 z-10">
+            <div className="-mt-12 md:-mt-16">
+              <PartnerLogos />
+            </div>
             <About />
             <Experience />
             <Portfolio />
