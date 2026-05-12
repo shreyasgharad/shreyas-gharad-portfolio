@@ -10,6 +10,7 @@ import Blog from '../components/Blog';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import PartnerLogos from '../components/PartnerLogos';
+import CaseStudies from '../components/CaseStudies';
 
 const Index = () => {
   return (
@@ -39,6 +40,7 @@ const Index = () => {
             <About />
             <Experience />
             <Portfolio />
+            <CaseStudies />
             <Services />
             <Blog />
             <Contact />
