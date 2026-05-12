@@ -18,6 +18,7 @@ export interface CaseStudy {
   result: string;
   impact: string;
   metaDescription: string;
+  agencyLink?: string;
 }
 
 export const caseStudies: CaseStudy[] = [
