@@ -14,7 +14,10 @@ const About = () => {
       <div className="container">
         <h2 className="section-title">About Me</h2>
         <p className="section-subtitle">
-          A performance marketing specialist helping brands connect with their audiences through technology and strategy
+          A Growth Marketing Executive helping brands scale through GTM strategy, paid media, influencer marketing and creative campaigns.
+        </p>
+        <p className="max-w-3xl mx-auto text-center text-gray-600 font-sf-pro-text mb-12 -mt-4">
+          I've led growth and marketing for brands across alcobev, hospitality, FMCG, and consumer tech — combining data-driven paid media with high-impact creative strategy to drive measurable results.
         </p>
         
         {/* Mobile Accordion */}

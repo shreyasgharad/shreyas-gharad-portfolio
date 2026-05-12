@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ExternalLink } from 'lucide-react';
 import { caseStudies } from '@/data/caseStudies';
 
 const CaseStudies = () => {
@@ -14,29 +14,45 @@ const CaseStudies = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {caseStudies.map((cs) => (
-            <Link
+            <div
               key={cs.slug}
-              to={`/work/${cs.slug}`}
               className="group rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
             >
-              <div className="h-44 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6">
-                <img
-                  src={cs.logo}
-                  alt={`${cs.brand} logo`}
-                  className="max-h-24 max-w-[80%] object-contain"
-                />
-              </div>
+              <Link to={`/work/${cs.slug}`} className="block">
+                <div className="h-44 bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center p-6">
+                  <img
+                    src={cs.logo}
+                    alt={`${cs.brand} logo`}
+                    className="max-h-24 max-w-[80%] object-contain"
+                  />
+                </div>
+              </Link>
               <div className="p-6 flex flex-col flex-1">
                 <span className="inline-block self-start text-xs font-medium px-3 py-1 bg-blue/10 text-blue rounded-full mb-3 font-sf-pro-text">
                   {cs.category}
                 </span>
                 <h3 className="text-xl font-bold mb-2 font-sf-pro">{cs.brand}</h3>
                 <p className="text-sm text-gray-600 mb-6 font-sf-pro-text">{cs.tag}</p>
-                <span className="mt-auto inline-flex items-center gap-1 text-sm font-medium text-blue group-hover:gap-2 transition-all font-sf-pro-text">
-                  View Case Study <ArrowRight size={16} />
-                </span>
+                <div className="mt-auto flex items-center justify-between gap-3 flex-wrap">
+                  <Link
+                    to={`/work/${cs.slug}`}
+                    className="inline-flex items-center gap-1 text-sm font-medium text-blue group-hover:gap-2 transition-all font-sf-pro-text"
+                  >
+                    View Case Study <ArrowRight size={16} />
+                  </Link>
+                  {cs.agencyLink && (
+                    <a
+                      href={cs.agencyLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-xs text-gray-500 hover:text-blue transition-colors font-sf-pro-text"
+                    >
+                      See Agency Work <ExternalLink size={12} />
+                    </a>
+                  )}
+                </div>
               </div>
-            </Link>
+            </div>
           ))}
         </div>
       </div>

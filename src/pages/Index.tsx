@@ -11,6 +11,7 @@ import Contact from '../components/Contact';
 import Footer from '../components/Footer';
 import PartnerLogos from '../components/PartnerLogos';
 import CaseStudies from '../components/CaseStudies';
+import RetainedClients from '../components/RetainedClients';
 
 const Index = () => {
   return (
@@ -41,6 +42,7 @@ const Index = () => {
             <Experience />
             <Portfolio />
             <CaseStudies />
+            <RetainedClients />
             <Services />
             <Blog />
             <Contact />
