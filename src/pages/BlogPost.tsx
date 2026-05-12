@@ -204,7 +204,7 @@ const BlogPost = () => {
                 <div className="text-center sm:text-left">
                   <p className="font-bold text-gray-900 font-sf-pro">{post.author}</p>
                   <p className="text-sm text-gray-500 font-sf-pro-text">
-                    Performance Marketing Executive helping Indian brands scale globally through tech and strategy.
+                    Growth Marketing Executive helping Indian brands scale globally through GTM strategy, paid ads, influencer marketing, and social media growth.
                   </p>
                 </div>
               </div>

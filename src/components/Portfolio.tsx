@@ -26,15 +26,6 @@ const Portfolio = () => {
       logo: true,
     },
     {
-      id: 2,
-      title: 'York Winery',
-      category: 'beverages',
-      description: 'Digital marketing and social media management for premium winery.',
-      image: '/lovable-uploads/63c2ace2-bdd8-40c8-b966-8fac7b9dd451.png',
-      url: 'https://yorkwinery.com',
-      logo: true,
-    },
-    {
       id: 3,
       title: 'The Source',
       category: 'hotels',
@@ -149,15 +140,6 @@ const Portfolio = () => {
       description: 'Brand development and digital marketing for wine company.',
       image: '/lovable-uploads/4adee1c9-544e-43f3-ae4f-2b7213b4db22.png',
       url: 'https://rasawines.com',
-      logo: true,
-    },
-    {
-      id: 16,
-      title: 'BB Sourced',
-      category: 'fmcg',
-      description: 'E-commerce strategy and brand development for food sourcing company.',
-      image: "/lovable-uploads/fd59bab5-2ff2-4ec7-99bf-fdfaebf2ec2f.png",
-      url: 'https://bbsourced.com',
       logo: true,
     },
     {
