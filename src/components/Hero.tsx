@@ -44,6 +44,9 @@ const Hero = () => {
                   <span className="hero-accent-text">Strategy</span>
                 </span>
               </h1>
+              <p style={stagger(3)} className="text-xs text-white/70 font-sf-pro-text leading-relaxed px-2">
+                Growth Marketing Executive · GTM Strategy · Influencer Marketing · Paid Ads · Creative Campaigns
+              </p>
             </div>
 
             {/* Desktop layout */}
@@ -63,12 +66,15 @@ const Hero = () => {
                   Tech & Marketing
                 </span>
               </h1>
-              <p style={stagger(4)} className="text-lg text-white/60 mt-8 mb-10 max-w-lg font-sf-pro-text leading-relaxed">
+              <p style={stagger(4)} className="text-lg text-white/60 mt-8 mb-4 max-w-lg font-sf-pro-text leading-relaxed">
                 Growth Marketing Executive at{' '}
                 <span className="font-semibold text-white/90">
                   Tipple Works Co.
                 </span>{' '}
                 — driving GTM strategy, influencer marketing, paid ads, and social media growth for ambitious brands.
+              </p>
+              <p style={stagger(4)} className="text-sm uppercase tracking-[0.2em] text-white/50 mb-10 font-sf-pro-text">
+                GTM Strategy · Influencer Marketing · Paid Ads · Creative Campaigns
               </p>
               <div style={stagger(5)} className="flex flex-wrap gap-4">
                 <a 
