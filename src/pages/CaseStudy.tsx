@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { ArrowLeft, Target, Compass, Lightbulb, TrendingUp, Sparkles } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Target, Compass, Lightbulb, TrendingUp, Sparkles } from 'lucide-react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { caseStudies } from '@/data/caseStudies';
@@ -116,6 +116,19 @@ const CaseStudy = () => {
                 </section>
               ))}
             </div>
+
+            {cs.agencyLink && (
+              <div className="mt-10 flex justify-center">
+                <a
+                  href={cs.agencyLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-200 bg-white text-sm text-gray-700 hover:border-blue hover:text-blue transition-colors font-sf-pro-text"
+                >
+                  See Agency Work <ExternalLink size={14} />
+                </a>
+              </div>
+            )}
 
             <div className="mt-16 p-8 rounded-2xl bg-gradient-to-br from-blue/5 to-blue/10 border border-blue/10 text-center">
               <h3 className="text-2xl font-bold mb-2 font-sf-pro">Building something similar?</h3>
