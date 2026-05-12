@@ -61,6 +61,7 @@ export const caseStudies: CaseStudy[] = [
     result: 'Strong follower growth and engagement uplift on Instagram across the campaign window. (Final numbers to be added.)',
     impact: 'Sharpened the brand’s digital identity and built a repeatable growth engine that married craft storytelling with performance discipline.',
     metaDescription: 'Strategy, creative and paid ads case study for Stranger & Sons Gin — driving Instagram follower growth and engagement.',
+    agencyLink: 'https://www.tippleworks.com/project/provogue',
   },
   {
     slug: 'heaven-by-sula',
@@ -81,6 +82,7 @@ export const caseStudies: CaseStudy[] = [
     result: 'High-quality content reach across Instagram and YouTube during the launch window. (Detailed metrics to be added.)',
     impact: 'Generated strong launch buzz, established Heaven by Sula as a distinct destination within the Sula portfolio, and seeded long-tail discoverability through evergreen creator content.',
     metaDescription: 'GTM and influencer marketing case study for the launch of Heaven by Sula — a new Nashik hotel in the Sula Vineyards portfolio.',
+    agencyLink: 'https://www.tippleworks.com/project/sula-fest',
   },
   {
     slug: 'jeevansathi',
