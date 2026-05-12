@@ -11,10 +11,6 @@ import Autoplay from 'embla-carousel-autoplay';
 
 const partnerLogos = [
   {
-    name: "York Winery",
-    image: "/lovable-uploads/63c2ace2-bdd8-40c8-b966-8fac7b9dd451.png"
-  },
-  {
     name: "The Source",
     image: "/lovable-uploads/2b1b229e-0a60-4970-9993-f84b70b5145d.png"
   },
@@ -25,22 +21,6 @@ const partnerLogos = [
   {
     name: "Provogue",
     image: "/lovable-uploads/9a3e8bc6-992a-4732-9789-880da66040e4.png"
-  },
-  {
-    name: "Matero",
-    image: "/lovable-uploads/3c7e22b2-1f59-4b77-8550-3f2855cdec2e.png"
-  },
-  {
-    name: "Shakakan",
-    image: "/lovable-uploads/e167262e-3c80-4779-8f2e-343f2cbe5838.png"
-  },
-  {
-    name: "Elaan",
-    image: "/lovable-uploads/5b4f342d-9e2c-4c6e-88a1-9f7207ded483.png"
-  },
-  {
-    name: "Naar",
-    image: "/lovable-uploads/4a50907b-1741-4d11-94f7-ee62637fc8f6.png"
   },
   {
     name: "DSG Partners",

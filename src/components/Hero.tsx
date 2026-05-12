@@ -64,11 +64,11 @@ const Hero = () => {
                 </span>
               </h1>
               <p style={stagger(4)} className="text-lg text-white/60 mt-8 mb-10 max-w-lg font-sf-pro-text leading-relaxed">
-                Performance Marketing Executive at{' '}
+                Growth Marketing Executive at{' '}
                 <span className="font-semibold text-white/90">
                   Tipple Works Co.
                 </span>{' '}
-                — helping ambitious brands make their mark in the digital world.
+                — driving GTM strategy, influencer marketing, paid ads, and social media growth for ambitious brands.
               </p>
               <div style={stagger(5)} className="flex flex-wrap gap-4">
                 <a 
@@ -113,11 +113,11 @@ const Hero = () => {
             {/* Mobile buttons */}
             <div className="md:hidden flex flex-col items-center text-center space-y-4 w-full px-4 mt-4">
               <p style={stagger(3)} className="text-sm text-white/60 font-sf-pro-text">
-                Performance Marketing Executive at{' '}
+                Growth Marketing Executive at{' '}
                 <span className="font-semibold text-white/90">
                   Tipple Works Co.
                 </span>{' '}
-                — helping ambitious brands make their mark in the digital world.
+                — driving GTM strategy, influencer marketing, paid ads, and social media growth.
               </p>
               
               <div style={stagger(4)} className="grid grid-cols-3 gap-2 w-full max-w-sm">

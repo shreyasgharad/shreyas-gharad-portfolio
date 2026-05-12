@@ -6,10 +6,10 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      role: "Digital Growth Executive",
-      company: "Tipple Works Co.",
+      role: "Growth Marketing Executive",
+      company: "Tipple Works Co. — Performance & Creative Marketing Agency",
       period: "September 2024 - Present",
-      description: "Leading digital transformation initiatives, developing comprehensive growth strategies, and managing high-impact marketing campaigns across multiple channels. Overseeing data analytics, customer journey optimization, and implementing innovative digital solutions for enhanced brand performance and revenue growth.",
+      description: "Leading growth marketing for D2C and B2B brands at a performance & creative marketing agency. Specializing in GTM strategy, influencer marketing, paid ads (Google & Meta), and social media growth — owning end-to-end campaign architecture, analytics, and revenue outcomes.",
       location: "Mumbai, Maharashtra, India",
       icon: Building,
       iconBg: "bg-blue-light/20",
