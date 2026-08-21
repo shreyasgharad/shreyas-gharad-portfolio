@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import ThemeToggle from './ThemeToggle';
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -95,9 +96,10 @@ const Navbar = () => {
           >
             Get In Touch
           </a>
+          <ThemeToggle scrolled={scrolled} />
         </div>
-        
-        <button 
+
+        <button
           className={`md:hidden p-2.5 rounded-xl transition-all duration-500 active:scale-90 ${
             scrolled ? 'bg-gray-100 text-gray-800' : 'bg-white/10 backdrop-blur-sm border border-white/10 text-white'
           }`}

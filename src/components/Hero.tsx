@@ -104,7 +104,7 @@ const Hero = () => {
           </div>
           
           {/* Photo */}
-          <div className="md:w-2/5 flex flex-col items-center order-1 md:order-2" style={stagger(2)}>
+          <div className="md:w-2/5 flex flex-col items-center order-1 md:order-2 md:-mt-[3cm]" style={stagger(2)}>
             <div className="relative mb-6 md:mb-0 group">
               <div className="w-48 h-48 md:w-72 md:h-72 rounded-full absolute -top-4 -left-4 hero-photo-glow" />
               <div className="w-48 h-48 md:w-72 md:h-72 rounded-full overflow-hidden shadow-2xl shadow-black/50 relative z-10 ring-2 ring-white/15 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-105 group-hover:ring-white/30">
